@@ -13,4 +13,4 @@ this is a homework for software architecture course team C at ss.pku.edu.cn.
 这个是分组名单，没有跟小组成员沟通过的看看名单上的联系方式，沟通一下。
 小组作业较多，建议做完一部分就交一部分，别都推到最后。
 
-组员名单：郭海鑫	宋光泽	刘洪通	康安博	叶立德	赵宇	常冬磊	徐元明
+组员名单：郭海新	宋光泽	刘洪通	康安博	叶立德	赵宇	常冬磊	徐元明
