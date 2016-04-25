@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>  
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %p - %m - %c:%l%n" />
+		</layout>
+		<!-- 
+		<filter class="org.quartz.core.JobRunShell">
+			<param name="levelMin" value="warn"/>
+			<param name="levelMax" value="error"/>
+			<param name="AcceptOnMatch" value="true"/>
+		</filter>
+		-->
+	</appender>
+	<appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/info.log" /> <!-- "H:\\im.log/data1/imserver/logs/bugs.log" /> -->		
+		<param name="Append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %p - %m - %c:%l%n" />
+		</layout>
+	</appender>
+	<appender name="DEBUG_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/debug.log" /> <!-- "H:\\im.log/data1/imserver/logs/bugs.log" /> -->		
+		<param name="Append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %p - %m - %c:%l%n" />
+		</layout>
+	</appender>
+
+	<logger name="org.apache.http" additivity="true">
+		<level value="debug" />				
+	</logger>
+
+	<root>
+		<level value="info" />		
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>
