@@ -6,6 +6,20 @@
   <name>SoftwareArchitectureTeamC</name>
   <description>这个是周四晚课C组作业</description>
   
+  <build>
+  	<plugins>
+	  	<plugin> 
+		   <groupId>org.mybatis.generator</groupId> 
+		   <artifactId>mybatis-generator-maven-plugin</artifactId> 
+		   <version>1.3.2</version> 
+	           <configuration>  
+	                 <verbose>true</verbose>  
+	                 <overwrite>true</overwrite>  
+	           </configuration>  
+		</plugin>
+  	</plugins>
+  </build>
+  
   <properties>  
         <!-- spring版本号 -->  
         <spring.version>4.0.2.RELEASE</spring.version>  
