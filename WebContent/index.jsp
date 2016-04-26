@@ -6,6 +6,7 @@
   </head>  
     
   <body>  
+  C组作业
     ${user.userName}  
   </body>  
 </html> 

@@ -10,6 +10,7 @@ import cn.edu.pku.ss.sa.teamc.dao.model.TUser;
 import cn.edu.pku.ss.sa.teamc.dao.model.TUserExample;
 import cn.edu.pku.ss.sa.teamc.dao.sqlmapper.TUserMapper;
 import cn.edu.pku.ss.sa.teamc.service.TUserService;
+import cn.edu.pku.ss.sa.teamc.util.DigestUtil;
 /**
  * 
  * @author xuyuanming
@@ -19,6 +20,8 @@ import cn.edu.pku.ss.sa.teamc.service.TUserService;
 @Service("TUserService")
 public class TUserServiceImpl implements TUserService {
 
+	private static final String salt = "xuyuanming";
+	
 	@Resource
 	private TUserMapper dao;
 	
@@ -26,6 +29,17 @@ public class TUserServiceImpl implements TUserService {
 		// TODO Auto-generated method stub
 		TUserExample example = new TUserExample();
 		example.createCriteria().andUsernameEqualTo(username);
+		List<TUser> list = dao.selectByExample(example);
+		
+		return (null == list || list.size() <=0) ? null: list.get(0);
+	}
+
+	@Override
+	public TUser getUserByNameAndPassword(String username, String password) {
+		TUserExample example = new TUserExample();
+		example.createCriteria().andUsernameEqualTo(username)
+		.andPasswordEqualTo(DigestUtil.hashToMD5Hex(salt + password).toUpperCase());
+		
 		List<TUser> list = dao.selectByExample(example);
 		
 		return (null == list || list.size() <=0) ? null: list.get(0);
