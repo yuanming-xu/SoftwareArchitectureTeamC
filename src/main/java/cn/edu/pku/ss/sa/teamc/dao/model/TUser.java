@@ -1,26 +1,78 @@
 package cn.edu.pku.ss.sa.teamc.dao.model;
 
-public class TUser {
-    private Long id;
+import java.util.Date;
 
-    private String username;
+public class TUser {
+    private Integer id;
+
+    private String name;
+
+    private Date createTime;
+
+    private Date lastLoginTime;
+
+    private String lastLoginIp;
+
+    private Integer rights;
+
+    private Integer status;
 
     private String password;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getLastLoginTime() {
+        return lastLoginTime;
+    }
+
+    public void setLastLoginTime(Date lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
+    }
+
+    public String getLastLoginIp() {
+        return lastLoginIp;
+    }
+
+    public void setLastLoginIp(String lastLoginIp) {
+        this.lastLoginIp = lastLoginIp == null ? null : lastLoginIp.trim();
+    }
+
+    public Integer getRights() {
+        return rights;
+    }
+
+    public void setRights(Integer rights) {
+        this.rights = rights;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public String getPassword() {

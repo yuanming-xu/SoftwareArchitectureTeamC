@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.pku.ss.sa.teamc.dao.sqlmapper.TGoodsSaleMapper" >
+  <resultMap id="BaseResultMap" type="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSale" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="goods_id" property="goodsId" jdbcType="BIGINT" />
+    <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
+    <result column="goods_type_id" property="goodsTypeId" jdbcType="INTEGER" />
+    <result column="goods_type_name" property="goodsTypeName" jdbcType="VARCHAR" />
+    <result column="goods_nick_name" property="goodsNickName" jdbcType="VARCHAR" />
+    <result column="sale_time" property="saleTime" jdbcType="TIMESTAMP" />
+    <result column="sale_count" property="saleCount" jdbcType="INTEGER" />
+    <result column="receipt" property="receipt" jdbcType="SMALLINT" />
+    <result column="invoice" property="invoice" jdbcType="SMALLINT" />
+    <result column="money" property="money" jdbcType="SMALLINT" />
+    <result column="audit" property="audit" jdbcType="SMALLINT" />
+    <result column="status" property="status" jdbcType="SMALLINT" />
+    <result column="客户id" property="客户id" jdbcType="BIGINT" />
+    <result column="客户名称" property="客户名称" jdbcType="VARCHAR" />
+    <result column="seller_id" property="sellerId" jdbcType="INTEGER" />
+    <result column="seller_name" property="sellerName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, goods_id, goods_name, goods_type_id, goods_type_name, goods_nick_name, sale_time, 
+    sale_count, receipt, invoice, money, `audit`, `status`, 客户id, 客户名称, seller_id, seller_name
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSaleExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_goods_sale
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_goods_sale
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_goods_sale
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSaleExample" >
+    delete from t_goods_sale
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSale" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into t_goods_sale (goods_id, goods_name, goods_type_id, 
+      goods_type_name, goods_nick_name, sale_time, 
+      sale_count, receipt, invoice, 
+      money, `audit`, `status`, 
+      客户id, 客户名称, seller_id, 
+      seller_name)
+    values (#{goodsId,jdbcType=BIGINT}, #{goodsName,jdbcType=VARCHAR}, #{goodsTypeId,jdbcType=INTEGER}, 
+      #{goodsTypeName,jdbcType=VARCHAR}, #{goodsNickName,jdbcType=VARCHAR}, #{saleTime,jdbcType=TIMESTAMP}, 
+      #{saleCount,jdbcType=INTEGER}, #{receipt,jdbcType=SMALLINT}, #{invoice,jdbcType=SMALLINT}, 
+      #{money,jdbcType=SMALLINT}, #{audit,jdbcType=SMALLINT}, #{status,jdbcType=SMALLINT}, 
+      #{客户id,jdbcType=BIGINT}, #{客户名称,jdbcType=VARCHAR}, #{sellerId,jdbcType=INTEGER}, 
+      #{sellerName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSale" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into t_goods_sale
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="goodsId != null" >
+        goods_id,
+      </if>
+      <if test="goodsName != null" >
+        goods_name,
+      </if>
+      <if test="goodsTypeId != null" >
+        goods_type_id,
+      </if>
+      <if test="goodsTypeName != null" >
+        goods_type_name,
+      </if>
+      <if test="goodsNickName != null" >
+        goods_nick_name,
+      </if>
+      <if test="saleTime != null" >
+        sale_time,
+      </if>
+      <if test="saleCount != null" >
+        sale_count,
+      </if>
+      <if test="receipt != null" >
+        receipt,
+      </if>
+      <if test="invoice != null" >
+        invoice,
+      </if>
+      <if test="money != null" >
+        money,
+      </if>
+      <if test="audit != null" >
+        `audit`,
+      </if>
+      <if test="status != null" >
+        `status`,
+      </if>
+      <if test="客户id != null" >
+        客户id,
+      </if>
+      <if test="客户名称 != null" >
+        客户名称,
+      </if>
+      <if test="sellerId != null" >
+        seller_id,
+      </if>
+      <if test="sellerName != null" >
+        seller_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="goodsId != null" >
+        #{goodsId,jdbcType=BIGINT},
+      </if>
+      <if test="goodsName != null" >
+        #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsTypeId != null" >
+        #{goodsTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="goodsTypeName != null" >
+        #{goodsTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNickName != null" >
+        #{goodsNickName,jdbcType=VARCHAR},
+      </if>
+      <if test="saleTime != null" >
+        #{saleTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="saleCount != null" >
+        #{saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="receipt != null" >
+        #{receipt,jdbcType=SMALLINT},
+      </if>
+      <if test="invoice != null" >
+        #{invoice,jdbcType=SMALLINT},
+      </if>
+      <if test="money != null" >
+        #{money,jdbcType=SMALLINT},
+      </if>
+      <if test="audit != null" >
+        #{audit,jdbcType=SMALLINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="客户id != null" >
+        #{客户id,jdbcType=BIGINT},
+      </if>
+      <if test="客户名称 != null" >
+        #{客户名称,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerId != null" >
+        #{sellerId,jdbcType=INTEGER},
+      </if>
+      <if test="sellerName != null" >
+        #{sellerName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSaleExample" resultType="java.lang.Integer" >
+    select count(*) from t_goods_sale
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_goods_sale
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.goodsId != null" >
+        goods_id = #{record.goodsId,jdbcType=BIGINT},
+      </if>
+      <if test="record.goodsName != null" >
+        goods_name = #{record.goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.goodsTypeId != null" >
+        goods_type_id = #{record.goodsTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="record.goodsTypeName != null" >
+        goods_type_name = #{record.goodsTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.goodsNickName != null" >
+        goods_nick_name = #{record.goodsNickName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saleTime != null" >
+        sale_time = #{record.saleTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.saleCount != null" >
+        sale_count = #{record.saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="record.receipt != null" >
+        receipt = #{record.receipt,jdbcType=SMALLINT},
+      </if>
+      <if test="record.invoice != null" >
+        invoice = #{record.invoice,jdbcType=SMALLINT},
+      </if>
+      <if test="record.money != null" >
+        money = #{record.money,jdbcType=SMALLINT},
+      </if>
+      <if test="record.audit != null" >
+        `audit` = #{record.audit,jdbcType=SMALLINT},
+      </if>
+      <if test="record.status != null" >
+        `status` = #{record.status,jdbcType=SMALLINT},
+      </if>
+      <if test="record.客户id != null" >
+        客户id = #{record.客户id,jdbcType=BIGINT},
+      </if>
+      <if test="record.客户名称 != null" >
+        客户名称 = #{record.客户名称,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sellerId != null" >
+        seller_id = #{record.sellerId,jdbcType=INTEGER},
+      </if>
+      <if test="record.sellerName != null" >
+        seller_name = #{record.sellerName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_goods_sale
+    set id = #{record.id,jdbcType=BIGINT},
+      goods_id = #{record.goodsId,jdbcType=BIGINT},
+      goods_name = #{record.goodsName,jdbcType=VARCHAR},
+      goods_type_id = #{record.goodsTypeId,jdbcType=INTEGER},
+      goods_type_name = #{record.goodsTypeName,jdbcType=VARCHAR},
+      goods_nick_name = #{record.goodsNickName,jdbcType=VARCHAR},
+      sale_time = #{record.saleTime,jdbcType=TIMESTAMP},
+      sale_count = #{record.saleCount,jdbcType=INTEGER},
+      receipt = #{record.receipt,jdbcType=SMALLINT},
+      invoice = #{record.invoice,jdbcType=SMALLINT},
+      money = #{record.money,jdbcType=SMALLINT},
+      `audit` = #{record.audit,jdbcType=SMALLINT},
+      `status` = #{record.status,jdbcType=SMALLINT},
+      客户id = #{record.客户id,jdbcType=BIGINT},
+      客户名称 = #{record.客户名称,jdbcType=VARCHAR},
+      seller_id = #{record.sellerId,jdbcType=INTEGER},
+      seller_name = #{record.sellerName,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSale" >
+    update t_goods_sale
+    <set >
+      <if test="goodsId != null" >
+        goods_id = #{goodsId,jdbcType=BIGINT},
+      </if>
+      <if test="goodsName != null" >
+        goods_name = #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsTypeId != null" >
+        goods_type_id = #{goodsTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="goodsTypeName != null" >
+        goods_type_name = #{goodsTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNickName != null" >
+        goods_nick_name = #{goodsNickName,jdbcType=VARCHAR},
+      </if>
+      <if test="saleTime != null" >
+        sale_time = #{saleTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="saleCount != null" >
+        sale_count = #{saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="receipt != null" >
+        receipt = #{receipt,jdbcType=SMALLINT},
+      </if>
+      <if test="invoice != null" >
+        invoice = #{invoice,jdbcType=SMALLINT},
+      </if>
+      <if test="money != null" >
+        money = #{money,jdbcType=SMALLINT},
+      </if>
+      <if test="audit != null" >
+        `audit` = #{audit,jdbcType=SMALLINT},
+      </if>
+      <if test="status != null" >
+        `status` = #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="客户id != null" >
+        客户id = #{客户id,jdbcType=BIGINT},
+      </if>
+      <if test="客户名称 != null" >
+        客户名称 = #{客户名称,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerId != null" >
+        seller_id = #{sellerId,jdbcType=INTEGER},
+      </if>
+      <if test="sellerName != null" >
+        seller_name = #{sellerName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.pku.ss.sa.teamc.dao.model.TGoodsSale" >
+    update t_goods_sale
+    set goods_id = #{goodsId,jdbcType=BIGINT},
+      goods_name = #{goodsName,jdbcType=VARCHAR},
+      goods_type_id = #{goodsTypeId,jdbcType=INTEGER},
+      goods_type_name = #{goodsTypeName,jdbcType=VARCHAR},
+      goods_nick_name = #{goodsNickName,jdbcType=VARCHAR},
+      sale_time = #{saleTime,jdbcType=TIMESTAMP},
+      sale_count = #{saleCount,jdbcType=INTEGER},
+      receipt = #{receipt,jdbcType=SMALLINT},
+      invoice = #{invoice,jdbcType=SMALLINT},
+      money = #{money,jdbcType=SMALLINT},
+      `audit` = #{audit,jdbcType=SMALLINT},
+      `status` = #{status,jdbcType=SMALLINT},
+      客户id = #{客户id,jdbcType=BIGINT},
+      客户名称 = #{客户名称,jdbcType=VARCHAR},
+      seller_id = #{sellerId,jdbcType=INTEGER},
+      seller_name = #{sellerName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

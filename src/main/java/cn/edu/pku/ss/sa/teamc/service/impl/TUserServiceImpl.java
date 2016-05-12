@@ -28,7 +28,7 @@ public class TUserServiceImpl implements TUserService {
 	public TUser getUserByName(String username) {
 		// TODO Auto-generated method stub
 		TUserExample example = new TUserExample();
-		example.createCriteria().andUsernameEqualTo(username);
+		example.createCriteria().andNameEqualTo(username);
 		List<TUser> list = dao.selectByExample(example);
 		
 		return (null == list || list.size() <=0) ? null: list.get(0);
@@ -37,7 +37,7 @@ public class TUserServiceImpl implements TUserService {
 	@Override
 	public TUser getUserByNameAndPassword(String username, String password) {
 		TUserExample example = new TUserExample();
-		example.createCriteria().andUsernameEqualTo(username)
+		example.createCriteria().andNameEqualTo(username)
 		.andPasswordEqualTo(DigestUtil.hashToMD5Hex(salt + password).toUpperCase());
 		
 		List<TUser> list = dao.selectByExample(example);
