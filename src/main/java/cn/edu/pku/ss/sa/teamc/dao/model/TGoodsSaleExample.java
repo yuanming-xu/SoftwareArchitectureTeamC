@@ -915,133 +915,133 @@ public class TGoodsSaleExample {
             return (Criteria) this;
         }
 
-        public Criteria and客户idIsNull() {
-            addCriterion("客户id is null");
+        public Criteria andCustomerIdIsNull() {
+            addCriterion("customer_id is null");
             return (Criteria) this;
         }
 
-        public Criteria and客户idIsNotNull() {
-            addCriterion("客户id is not null");
+        public Criteria andCustomerIdIsNotNull() {
+            addCriterion("customer_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria and客户idEqualTo(Long value) {
-            addCriterion("客户id =", value, "客户id");
+        public Criteria andCustomerIdEqualTo(Long value) {
+            addCriterion("customer_id =", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idNotEqualTo(Long value) {
-            addCriterion("客户id <>", value, "客户id");
+        public Criteria andCustomerIdNotEqualTo(Long value) {
+            addCriterion("customer_id <>", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idGreaterThan(Long value) {
-            addCriterion("客户id >", value, "客户id");
+        public Criteria andCustomerIdGreaterThan(Long value) {
+            addCriterion("customer_id >", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idGreaterThanOrEqualTo(Long value) {
-            addCriterion("客户id >=", value, "客户id");
+        public Criteria andCustomerIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("customer_id >=", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idLessThan(Long value) {
-            addCriterion("客户id <", value, "客户id");
+        public Criteria andCustomerIdLessThan(Long value) {
+            addCriterion("customer_id <", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idLessThanOrEqualTo(Long value) {
-            addCriterion("客户id <=", value, "客户id");
+        public Criteria andCustomerIdLessThanOrEqualTo(Long value) {
+            addCriterion("customer_id <=", value, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idIn(List<Long> values) {
-            addCriterion("客户id in", values, "客户id");
+        public Criteria andCustomerIdIn(List<Long> values) {
+            addCriterion("customer_id in", values, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idNotIn(List<Long> values) {
-            addCriterion("客户id not in", values, "客户id");
+        public Criteria andCustomerIdNotIn(List<Long> values) {
+            addCriterion("customer_id not in", values, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idBetween(Long value1, Long value2) {
-            addCriterion("客户id between", value1, value2, "客户id");
+        public Criteria andCustomerIdBetween(Long value1, Long value2) {
+            addCriterion("customer_id between", value1, value2, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户idNotBetween(Long value1, Long value2) {
-            addCriterion("客户id not between", value1, value2, "客户id");
+        public Criteria andCustomerIdNotBetween(Long value1, Long value2) {
+            addCriterion("customer_id not between", value1, value2, "customerId");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称IsNull() {
-            addCriterion("客户名称 is null");
+        public Criteria andCustomerNameIsNull() {
+            addCriterion("customer_name is null");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称IsNotNull() {
-            addCriterion("客户名称 is not null");
+        public Criteria andCustomerNameIsNotNull() {
+            addCriterion("customer_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称EqualTo(String value) {
-            addCriterion("客户名称 =", value, "客户名称");
+        public Criteria andCustomerNameEqualTo(String value) {
+            addCriterion("customer_name =", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称NotEqualTo(String value) {
-            addCriterion("客户名称 <>", value, "客户名称");
+        public Criteria andCustomerNameNotEqualTo(String value) {
+            addCriterion("customer_name <>", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称GreaterThan(String value) {
-            addCriterion("客户名称 >", value, "客户名称");
+        public Criteria andCustomerNameGreaterThan(String value) {
+            addCriterion("customer_name >", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称GreaterThanOrEqualTo(String value) {
-            addCriterion("客户名称 >=", value, "客户名称");
+        public Criteria andCustomerNameGreaterThanOrEqualTo(String value) {
+            addCriterion("customer_name >=", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称LessThan(String value) {
-            addCriterion("客户名称 <", value, "客户名称");
+        public Criteria andCustomerNameLessThan(String value) {
+            addCriterion("customer_name <", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称LessThanOrEqualTo(String value) {
-            addCriterion("客户名称 <=", value, "客户名称");
+        public Criteria andCustomerNameLessThanOrEqualTo(String value) {
+            addCriterion("customer_name <=", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称Like(String value) {
-            addCriterion("客户名称 like", value, "客户名称");
+        public Criteria andCustomerNameLike(String value) {
+            addCriterion("customer_name like", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称NotLike(String value) {
-            addCriterion("客户名称 not like", value, "客户名称");
+        public Criteria andCustomerNameNotLike(String value) {
+            addCriterion("customer_name not like", value, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称In(List<String> values) {
-            addCriterion("客户名称 in", values, "客户名称");
+        public Criteria andCustomerNameIn(List<String> values) {
+            addCriterion("customer_name in", values, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称NotIn(List<String> values) {
-            addCriterion("客户名称 not in", values, "客户名称");
+        public Criteria andCustomerNameNotIn(List<String> values) {
+            addCriterion("customer_name not in", values, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称Between(String value1, String value2) {
-            addCriterion("客户名称 between", value1, value2, "客户名称");
+        public Criteria andCustomerNameBetween(String value1, String value2) {
+            addCriterion("customer_name between", value1, value2, "customerName");
             return (Criteria) this;
         }
 
-        public Criteria and客户名称NotBetween(String value1, String value2) {
-            addCriterion("客户名称 not between", value1, value2, "客户名称");
+        public Criteria andCustomerNameNotBetween(String value1, String value2) {
+            addCriterion("customer_name not between", value1, value2, "customerName");
             return (Criteria) this;
         }
 

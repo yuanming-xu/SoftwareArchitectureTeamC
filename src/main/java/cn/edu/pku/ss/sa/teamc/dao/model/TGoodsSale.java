@@ -29,9 +29,9 @@ public class TGoodsSale {
 
     private Short status;
 
-    private Long 客户id;
+    private Long customerId;
 
-    private String 客户名称;
+    private String customerName;
 
     private Integer sellerId;
 
@@ -141,20 +141,20 @@ public class TGoodsSale {
         this.status = status;
     }
 
-    public Long get客户id() {
-        return 客户id;
+    public Long getCustomerId() {
+        return customerId;
     }
 
-    public void set客户id(Long 客户id) {
-        this.客户id = 客户id;
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
     }
 
-    public String get客户名称() {
-        return 客户名称;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void set客户名称(String 客户名称) {
-        this.客户名称 = 客户名称 == null ? null : 客户名称.trim();
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName == null ? null : customerName.trim();
     }
 
     public Integer getSellerId() {

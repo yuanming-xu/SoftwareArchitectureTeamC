@@ -64,8 +64,8 @@ create table t_goods_sale
    money                smallint,
    audit                smallint,
    status               smallint,
-   客户id                 bigint,
-   客户名称                 varchar(200),
+   customer_id          bigint,
+   customer_name        varchar(200),
    seller_id            int,
    seller_name          varchar(200),
    primary key (id)
@@ -80,7 +80,7 @@ alter table t_goods_sale comment '销售记录';
 create table t_goods_type
 (
    id                   int not null auto_increment,
-   商品类型名称               varchar(200),
+   type_name            varchar(200),
    primary key (id)
 )
 type = InnoDB;

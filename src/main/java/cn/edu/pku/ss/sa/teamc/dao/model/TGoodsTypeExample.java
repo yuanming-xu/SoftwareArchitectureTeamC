@@ -164,73 +164,73 @@ public class TGoodsTypeExample {
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称IsNull() {
-            addCriterion("商品类型名称 is null");
+        public Criteria andTypeNameIsNull() {
+            addCriterion("type_name is null");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称IsNotNull() {
-            addCriterion("商品类型名称 is not null");
+        public Criteria andTypeNameIsNotNull() {
+            addCriterion("type_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称EqualTo(String value) {
-            addCriterion("商品类型名称 =", value, "商品类型名称");
+        public Criteria andTypeNameEqualTo(String value) {
+            addCriterion("type_name =", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称NotEqualTo(String value) {
-            addCriterion("商品类型名称 <>", value, "商品类型名称");
+        public Criteria andTypeNameNotEqualTo(String value) {
+            addCriterion("type_name <>", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称GreaterThan(String value) {
-            addCriterion("商品类型名称 >", value, "商品类型名称");
+        public Criteria andTypeNameGreaterThan(String value) {
+            addCriterion("type_name >", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称GreaterThanOrEqualTo(String value) {
-            addCriterion("商品类型名称 >=", value, "商品类型名称");
+        public Criteria andTypeNameGreaterThanOrEqualTo(String value) {
+            addCriterion("type_name >=", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称LessThan(String value) {
-            addCriterion("商品类型名称 <", value, "商品类型名称");
+        public Criteria andTypeNameLessThan(String value) {
+            addCriterion("type_name <", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称LessThanOrEqualTo(String value) {
-            addCriterion("商品类型名称 <=", value, "商品类型名称");
+        public Criteria andTypeNameLessThanOrEqualTo(String value) {
+            addCriterion("type_name <=", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称Like(String value) {
-            addCriterion("商品类型名称 like", value, "商品类型名称");
+        public Criteria andTypeNameLike(String value) {
+            addCriterion("type_name like", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称NotLike(String value) {
-            addCriterion("商品类型名称 not like", value, "商品类型名称");
+        public Criteria andTypeNameNotLike(String value) {
+            addCriterion("type_name not like", value, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称In(List<String> values) {
-            addCriterion("商品类型名称 in", values, "商品类型名称");
+        public Criteria andTypeNameIn(List<String> values) {
+            addCriterion("type_name in", values, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称NotIn(List<String> values) {
-            addCriterion("商品类型名称 not in", values, "商品类型名称");
+        public Criteria andTypeNameNotIn(List<String> values) {
+            addCriterion("type_name not in", values, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称Between(String value1, String value2) {
-            addCriterion("商品类型名称 between", value1, value2, "商品类型名称");
+        public Criteria andTypeNameBetween(String value1, String value2) {
+            addCriterion("type_name between", value1, value2, "typeName");
             return (Criteria) this;
         }
 
-        public Criteria and商品类型名称NotBetween(String value1, String value2) {
-            addCriterion("商品类型名称 not between", value1, value2, "商品类型名称");
+        public Criteria andTypeNameNotBetween(String value1, String value2) {
+            addCriterion("type_name not between", value1, value2, "typeName");
             return (Criteria) this;
         }
     }
