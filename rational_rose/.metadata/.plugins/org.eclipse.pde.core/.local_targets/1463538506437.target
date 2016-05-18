@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?pde version="3.8"?><target name="WebSphere Application Server V8.0 存根" sequenceNumber="0">
+<locations>
+<location path="C:/Program Files/IBM/SDP/runtimes/base_v8_stub/dev" type="Directory"/>
+<location path="C:/Program Files/IBM/SDP/runtimes/base_v8_stub/dev/JavaEE" type="Directory"/>
+<location path="C:/Program Files/IBM/SDP/runtimes/base_v8_stub/dev/osgi/4.2" type="Directory"/>
+<location path="L:/北大/周四晚，软件体系结构与设计/作业/SoftwareArchitectureTeamC/rational_rose/.metadata/.plugins/com.ibm.etools.aries.core/system/" type="Directory"/>
+</locations>
+</target>
