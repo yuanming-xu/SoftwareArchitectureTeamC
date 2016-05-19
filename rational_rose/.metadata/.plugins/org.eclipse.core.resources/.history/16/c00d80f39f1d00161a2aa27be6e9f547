@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<core:topology xmlns:constraint="http://www.ibm.com/ccl/soa/deploy/core/constraint/1.0.0/" xmlns:core="http://www.ibm.com/ccl/soa/deploy/core/1.0.0/" xmlns:operationDeploy="http://www.ibm.com/ccl/soa/deploy/operation/1.0.0/" xmlns:os="http://www.ibm.com/ccl/soa/deploy/os/1.0.0/" uuid="_NEFwwThPEd-CG_tack0Llw" description="Created on Thursday, March 25, 2010 4:41:59 PM EDT" displayName="signature" name="signature" decoratorSemantic="com.ibm.ccl.soa.deploy.exec">
+  <operationDeploy:unit.operationUnit uuid="_yG3f4DhPEd-CG_tack0Llw" displayName="SampleUnit" name="OperationUnit_116000">
+    <operationDeploy:capability.operation uuid="_yG3f4ThPEd-CG_tack0Llw" displayName="Sample" name="Sample" linkType="any"/>
+    <operationDeploy:capability.operationResults uuid="_yG3f4jhPEd-CG_tack0Llw" displayName="Sample_Results" name="Sample_Results" linkType="any"/>
+    <core:requirement uuid="_yG3f4zhPEd-CG_tack0Llw" name="Requirement_116062" dmoType="os:OperatingSystem" linkType="hosting" use="optional"/>
+    <core:requirement uuid="_yG3f5DhPEd-CG_tack0Llw" name="Requirement_116062_1" dmoType="os:User" linkType="dependency" use="optional"/>
+    <core:requirement uuid="_yG3f5ThPEd-CG_tack0Llw" name="Requirement_116062_2" linkType="member">
+      <constraint:constraint.memberCardinality uuid="_yG3f5jhPEd-CG_tack0Llw" name="MemberCardinalityConstraint" maxValue="unbounded" minValue="0"/>
+    </core:requirement>
+  </operationDeploy:unit.operationUnit>
+  <core:contract.explicit uuid="_NEFwwjhPEd-CG_tack0Llw" displayName="Make All Units Public-Editable By Default" name="ExplicitContract_867468" defaultConceptualPolicy="public_editable" defaultPolicy="public_editable"/>
+</core:topology>

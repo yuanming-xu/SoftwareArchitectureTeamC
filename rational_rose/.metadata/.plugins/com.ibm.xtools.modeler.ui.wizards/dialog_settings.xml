@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkingSetsConfigurationPage.TemplateConfiguration">
+	</section>
 	<section name="DefaultDiagramConfigurationPage.TemplateConfiguration">
-		<item value="2" key="DefaultDiagramConfigurationPage.defaultDiagramTypeForModelSetting"/>
+		<item value="4" key="DefaultDiagramConfigurationPage.defaultDiagramTypeForModelSetting"/>
 		<item value="true" key="DefaultDiagramConfigurationPage.createDefaultDiagramForModelSetting"/>
 		<section name="RootElementBlock">
 			<item value="Package" key="com.ibm.xtools.modeler.templates.blankRoseUMLModel"/>

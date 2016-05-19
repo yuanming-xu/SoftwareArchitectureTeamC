@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<DeployNotation:DeployDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DeployNotation="http://www.ibm.com/ccl/soa/deploy/notation/1.0.0/" xmlns:core="http://www.ibm.com/ccl/soa/deploy/core/1.0.0/" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_7W940B2fEeaWU5J_3VeItQ" type="DeployCore" name="签名" measurementUnit="Himetric">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_7W940R2fEeaWU5J_3VeItQ"/>
+  <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_7W940h2fEeaWU5J_3VeItQ"/>
+  <element xmi:type="core:Topology" href="签名.topology#/"/>
+</DeployNotation:DeployDiagram>

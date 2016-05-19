@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<core:topology xmlns:core="http://www.ibm.com/ccl/soa/deploy/core/1.0.0/" uuid="_VQ8kAR2fEeaWU5J_3VeItQ" description="&lt;p>创建于 2016年5月19日 星期四 下午04时54分40秒 CST&lt;/p>" displayName="部署1" name="部署1" decoratorSemantic="com.ibm.ccl.soa.deploy.core.dds">
+  <core:contract.explicit uuid="_VRA1cB2fEeaWU5J_3VeItQ" displayName="缺省情况下使所有单元成为公用可编辑单元" name="ExplicitContract_84551" defaultConceptualPolicy="public_editable" defaultPolicy="public_editable"/>
+</core:topology>

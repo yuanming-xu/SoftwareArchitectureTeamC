@@ -4,4 +4,8 @@
 		<item value="com.ibm.xtools.modeler.ui.wizards.category.umlGeneralPurpose" key="NewModelFromTemplatePage.lastCategory"/>
 		<item value="com.ibm.xtools.modeler.templates.blankRoseUMLModel" key="NewModelFromTemplatePage.lastTemplate"/>
 	</section>
+	<section name="TopologyCreationWizard">
+		<item value="com.ibm.ccl.soa.deploy.core.ui.general" key="CreationTemplateControls.lastCategory"/>
+		<item value="com.ibm.ccl.soa.deploy.general.deployment" key="CreationTemplateControls.lastTemplate"/>
+	</section>
 </section>

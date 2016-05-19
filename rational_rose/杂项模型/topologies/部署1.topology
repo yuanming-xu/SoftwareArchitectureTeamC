@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<core:topology xmlns:analysisDeploy="http://www.ibm.com/ccl/soa/deploy/analysis/1.0.0/" xmlns:constraint="http://www.ibm.com/ccl/soa/deploy/core/constraint/1.0.0/" xmlns:core="http://www.ibm.com/ccl/soa/deploy/core/1.0.0/" xmlns:dotnet="http://www.ibm.com/ccl/soa/deploy/dotnet/1.0.0" xmlns:genericsoftware="http://www.ibm.com/ccl/soa/deploy/genericsoftware/1.0.0/" xmlns:j2eeDeploy="http://www.ibm.com/ccl/soa/deploy/j2ee/1.0.0/" xmlns:javaDeploy="http://www.ibm.com/ccl/soa/deploy/java/1.0.0/" xmlns:net="http://www.ibm.com/ccl/soa/deploy/net/1.0.0/" xmlns:os="http://www.ibm.com/ccl/soa/deploy/os/1.0.0/" xmlns:server="http://www.ibm.com/ccl/soa/deploy/server/1.0.0/" xmlns:sqlserver="http://www.ibm.com/ccl/soa/deploy/sqlserver/1.0.0/" xmlns:tomcat="http://www.ibm.com/ccl/soa/deploy/tomcat/1.0.0/" xmlns:uml="http://www.ibm.com/ccl/soa/deploy/uml/1.0.0/" xmlns:was="http://www.ibm.com/ccl/soa/deploy/was/1.0.0/" uuid="_VQ8kAR2fEeaWU5J_3VeItQ" description="&lt;p>创建于 2016年5月19日 星期四 下午04时54分40秒 CST&lt;/p>" displayName="部署1" name="部署1" decoratorSemantic="com.ibm.ccl.soa.deploy.core.dds">
+  <os:unit.portConfigUnit uuid="_aNZ28B2fEeaWU5J_3VeItQ" displayName="Port Configuration" name="PortConfigUnit_117727" configurationUnit="true">
+    <os:capability.port uuid="_aNfWgB2fEeaWU5J_3VeItQ" displayName="http_nonssl_port" name="http_nonssl_port" linkType="dependency" applicationLayerProtocol="HTTP" port="8080" portName="http_non_ssl" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWgR2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWgh2fEeaWU5J_3VeItQ" displayName="http_ssl_port" name="http_ssl_port" linkType="dependency" applicationLayerProtocol="HTTP" port="8443" portName="http_ssl" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWgx2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWhB2fEeaWU5J_3VeItQ" displayName="http_proxy_port" name="http_proxy_port" linkType="dependency" applicationLayerProtocol="HTTP" port="8082" portName="http_proxy" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWhR2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWhh2fEeaWU5J_3VeItQ" displayName="ajp_connector_port" name="ajp_connector_port" linkType="dependency" applicationLayerProtocol="AJP" port="8009" portName="ajp_connector" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWhx2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWiB2fEeaWU5J_3VeItQ" displayName="shutdown_port" name="shutdown_port" linkType="dependency" applicationLayerProtocol="HTTP" port="8004" portName="shutdown" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWiR2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWih2fEeaWU5J_3VeItQ" displayName="tcp_listen_port" name="tcp_listen_port" linkType="dependency" applicationLayerProtocol="HTTP" port="4001" portName="tcp_listen_port" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWix2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <os:capability.port uuid="_aNfWjB2fEeaWU5J_3VeItQ" displayName="mcast_port" name="mcast_port" linkType="dependency" applicationLayerProtocol="HTTP" port="45564" portName="mcast_port" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_aNfWjR2fEeaWU5J_3VeItQ" attributeName="portName" mutable="false"/>
+    </os:capability.port>
+    <core:requirement uuid="_aNfWjh2fEeaWU5J_3VeItQ" displayName="PortConsumer" name="PortConsumer" dmoType="os:PortConsumer" linkType="hosting"/>
+  </os:unit.portConfigUnit>
+  <tomcat:unit.tomcatWebServer uuid="_aNfWjx2fEeaWU5J_3VeItQ" displayName="Tomcat 5.5 WebServer" name="TomcatWebServerUnit_117727">
+    <j2eeDeploy:capability.j2eeContainer uuid="_aNfWkB2fEeaWU5J_3VeItQ" displayName="J2EE Container 1.4" name="Provided J2EE Container Hosting Capability" linkType="any" containerVersion="1.4">
+      <core:attributeMetaData uuid="_aNfWkR2fEeaWU5J_3VeItQ" attributeName="containerVersion" mutable="false"/>
+    </j2eeDeploy:capability.j2eeContainer>
+    <j2eeDeploy:capability.servletContainer uuid="_aNfWkh2fEeaWU5J_3VeItQ" displayName="Servlet Container 2.4" name="Provided Servlet Container Hosting Capability" linkType="any" containerVersion="2.4">
+      <core:attributeMetaData uuid="_aNfWkx2fEeaWU5J_3VeItQ" attributeName="containerVersion" mutable="false"/>
+    </j2eeDeploy:capability.servletContainer>
+    <j2eeDeploy:capability.jspContainer uuid="_aNfWlB2fEeaWU5J_3VeItQ" displayName="JSP Container 2.0" name="Provided JSP Container Hosting Capability" linkType="any" containerVersion="2.0">
+      <core:attributeMetaData uuid="_aNfWlR2fEeaWU5J_3VeItQ" attributeName="containerVersion" mutable="false"/>
+    </j2eeDeploy:capability.jspContainer>
+    <os:capability.portConsumer uuid="_aNfWlh2fEeaWU5J_3VeItQ" displayName="Port Consumer" name="Port Consumer" linkType="any"/>
+    <tomcat:capability.tomcatServer uuid="_aNfWlx2fEeaWU5J_3VeItQ" displayName="Tomcat Server Version 5.5" name="tomcatServerCapability" linkType="any" tomcatVersion="5.5">
+      <core:attributeMetaData uuid="_aNfWmB2fEeaWU5J_3VeItQ" attributeName="tomcatVersion" mutable="false"/>
+    </tomcat:capability.tomcatServer>
+    <core:requirement uuid="_aNfWmR2fEeaWU5J_3VeItQ" displayName="Host on Tomcat Installation" name="r0" dmoType="tomcat:TomcatSystem" linkType="hosting"/>
+    <core:link.hosting uuid="_aNfWmh2fEeaWU5J_3VeItQ" name="ports" source="#/TomcatWebServerUnit_117727" target="#/PortConfigUnit_117727"/>
+  </tomcat:unit.tomcatWebServer>
+  <sqlserver:unit.sqlserverUnit uuid="_cikXgB2fEeaWU5J_3VeItQ" displayName="SQL Server" name="SqlServerUnit_133368" conceptual="false">
+    <sqlserver:capability.sqlserver uuid="_cikXgR2fEeaWU5J_3VeItQ" displayName="SQL Server" name="SQLServer" linkType="any"/>
+    <sqlserver:capability.databaseEngine uuid="_cikXgh2fEeaWU5J_3VeItQ" displayName="Database Engine" name="SQLServerDBEngine" linkType="any"/>
+    <core:requirement uuid="_cikXgx2fEeaWU5J_3VeItQ" displayName=".Net Framework" name="DotNetFramework" dmoType="dotnet:Framework" linkType="dependency" use="required"/>
+    <core:requirement uuid="_cikXhB2fEeaWU5J_3VeItQ" displayName="Host on Windows Operating System" name="windowsOSRequirement" dmoType="os:WindowsOperatingSystem" linkType="hosting" use="required"/>
+  </sqlserver:unit.sqlserverUnit>
+  <was:unit.wasAppServer uuid="_dSZR8B2fEeaWU5J_3VeItQ" name="WebsphereAppServerUnit_138382">
+    <j2eeDeploy:capability.j2eeContainer uuid="_dSZR8R2fEeaWU5J_3VeItQ" displayName="J2EE Container" name="J2EE Container" linkType="any" containerVersion="1.4"/>
+    <j2eeDeploy:capability.servletContainer uuid="_dSZR8h2fEeaWU5J_3VeItQ" displayName="Servlet Container" name="Servlet Container" linkType="any" containerVersion="2.4"/>
+    <j2eeDeploy:capability.jspContainer uuid="_dSZR8x2fEeaWU5J_3VeItQ" displayName="JSP Container" name="JSP Container" linkType="any" containerVersion="2.0"/>
+    <j2eeDeploy:capability.ejbContainer uuid="_dSZR9B2fEeaWU5J_3VeItQ" displayName="EJB Container" name="EJB Container" linkType="any" containerVersion="2.1"/>
+    <j2eeDeploy:capability.jcaContainer uuid="_dSZR9R2fEeaWU5J_3VeItQ" displayName="JCA Container" name="JCA Container" linkType="any" containerVersion="1.5"/>
+    <was:capability.wasServer uuid="_dSZR9h2fEeaWU5J_3VeItQ" displayName="WebSphere Server" name="WebSphere Server" linkType="any" serverName="server1" wasVersion="6.1"/>
+    <was:capability.wasSubstitutionVariable uuid="_dSZR9x2fEeaWU5J_3VeItQ" displayName="Substitution variable" name="Substitution Variable" linkType="any"/>
+    <was:capability.wasConfigurationContainer uuid="_dSZR-B2fEeaWU5J_3VeItQ" displayName="Configuration Container" name="Provide Configuration Container" linkType="any"/>
+    <was:capability.wasSharedLibContainer uuid="_dSZR-R2fEeaWU5J_3VeItQ" displayName="Provide shared library Container" name="Provide shared library Container" linkType="any"/>
+    <os:capability.portConsumer uuid="_dSZR-h2fEeaWU5J_3VeItQ" displayName="Port Consumer" name="Port Consumer" linkType="any"/>
+    <javaDeploy:capability.jre uuid="_dSZR-x2fEeaWU5J_3VeItQ" description="" displayName="java JRE" name="java.JRE" linkType="any" jreVersion="5.0"/>
+    <was:capability.wasModuleClassLoaderPolicy uuid="_dSZR_B2fEeaWU5J_3VeItQ" displayName="Module Class Loader Policy" mutable="true" name="Module Class Loader Policy" linkType="any" order="PARENT_FIRST" policy="MULTIPLE">
+      <core:attributeMetaData uuid="_dSZR_R2fEeaWU5J_3VeItQ" attributeName="order" mutable="true"/>
+      <core:attributeMetaData uuid="_dSZR_h2fEeaWU5J_3VeItQ" attributeName="policy" mutable="true"/>
+    </was:capability.wasModuleClassLoaderPolicy>
+    <was:capability.wasApplicationClassLoaderPolicy uuid="_dSZR_x2fEeaWU5J_3VeItQ" displayName="Application Class Loader Policy" mutable="true" name="Application Class Loader Policy" linkType="any" order="PARENT_FIRST" policy="MULTIPLE">
+      <core:attributeMetaData uuid="_dSZSAB2fEeaWU5J_3VeItQ" attributeName="order" mutable="true"/>
+      <core:attributeMetaData uuid="_dSZSAR2fEeaWU5J_3VeItQ" attributeName="policy" mutable="true"/>
+    </was:capability.wasApplicationClassLoaderPolicy>
+    <was:capability.wasSecurity uuid="_dSZSAh2fEeaWU5J_3VeItQ" name="WasSecurity" linkType="any" globalSecurityEnabled="false"/>
+    <core:requirement uuid="_dSZSAx2fEeaWU5J_3VeItQ" displayName="Hosted by Node" mutable="true" name="Node" dmoType="was:WasNode" linkType="hosting">
+      <constraint:constraint.version uuid="_dSZSBB2fEeaWU5J_3VeItQ" name="VersionConstraint" attributeName="wasVersion" value="6.1"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZSBR2fEeaWU5J_3VeItQ" displayName="Member of Cluster" mutable="true" name="ClusterMember" dmoType="was:WasClusterUnit" linkType="member">
+      <constraint:constraint.groupCardinality uuid="_dSZSBh2fEeaWU5J_3VeItQ" name="groupCardinality" maxValue="1" minValue="0"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZSBx2fEeaWU5J_3VeItQ" displayName="SIBus configuration may require datasource" mutable="true" name="messageEngineDB" dmoType="was:WasV5Datasource" linkType="dependency" use="optional"/>
+    <core:link.hosting uuid="_dSZSCB2fEeaWU5J_3VeItQ" name="ports" source="#/WebsphereAppServerUnit_138382" target="#/PortConfigUnit_138382"/>
+    <core:link.hosting uuid="_dSZSCR2fEeaWU5J_3VeItQ" name="ServerClassLoader" source="#/WebsphereAppServerUnit_138382" target="#/WasClassLoaderConfigurationUnit_138382"/>
+  </was:unit.wasAppServer>
+  <was:unit.wasSystemUnit uuid="_dSZSCh2fEeaWU5J_3VeItQ" displayName="WebSphere 6.1 Installation" name="WasSystemUnit_138382">
+    <constraint:constraint.attributePropagation uuid="_dSZSCx2fEeaWU5J_3VeItQ" displayName="Propagate Version Information" name="c0" sourceAttributeName="versionString" sourceObjectURI="cap1" targetAttributeName="wasVersion" targetObjectURI="WebSphereSystem"/>
+    <was:capability.wasSystem uuid="_dSZSDB2fEeaWU5J_3VeItQ" name="WebSphereSystem" linkType="any" installedLocation="C:\" productName="IBM WebSphere(R) Application Server" wasEdition="Base" wasHome="C:\Program Files\IBM\WebSphere\AppServer" wasVersion="6.1"/>
+    <genericsoftware:capability.version uuid="_dSZSDR2fEeaWU5J_3VeItQ" name="cap1" linkType="any" majorVersion="1" modifier="0" release="6" versionString="6.1"/>
+    <core:requirement uuid="_dSZSDh2fEeaWU5J_3VeItQ" displayName="Hosting on an OS" mutable="true" name="HostingOnOS" dmoType="os:OperatingSystem" linkType="hosting"/>
+    <core:link.hosting uuid="_dSZSDx2fEeaWU5J_3VeItQ" name="WebSphereSystemUnitHostsWasNode" source="#/WasSystemUnit_138382" target="#/WasNodeUnit_138382"/>
+  </was:unit.wasSystemUnit>
+  <was:unit.wasCellUnit uuid="_dSZSEB2fEeaWU5J_3VeItQ" name="WasCellUnit_138382" configurationUnit="true">
+    <was:capability.wasCell uuid="_dSZSER2fEeaWU5J_3VeItQ" displayName="WebSphere 6.1 Stand-Alone Cell" name="WebSphere61StandAloneCell" linkType="any" cellName="cell1" isDistributed="false" wasVersion="6.1"/>
+    <was:capability.wasSubstitutionVariable uuid="_dSZSEh2fEeaWU5J_3VeItQ" displayName="Substitution variable" name="Substitution Variable" linkType="any"/>
+    <was:capability.wasConfigurationContainer uuid="_dSZSEx2fEeaWU5J_3VeItQ" displayName="WebSphere Cell Configuration Container" name="WebSphereCellConfigurationContainer" linkType="any"/>
+    <was:capability.wasSharedLibContainer uuid="_dSZSFB2fEeaWU5J_3VeItQ" displayName="WebSphere Cell Shared Library Container" name="WebSphereCellSharedLibraryContainer" linkType="any"/>
+    <core:requirement uuid="_dSZSFR2fEeaWU5J_3VeItQ" displayName="Nodes in the Cell" mutable="true" name="NodeMember" dmoType="was:WasNodeUnit" linkType="member">
+      <constraint:constraint.memberCardinality uuid="_dSZSFh2fEeaWU5J_3VeItQ" name="memberCardinality" maxValue="2" minValue="1"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZSFx2fEeaWU5J_3VeItQ" displayName="Node Groups in the Cell" mutable="true" name="DefaultNodeGroup" dmoType="was:WasNodeGroupUnit" linkType="member">
+      <constraint:constraint.memberCardinality uuid="_dSZSGB2fEeaWU5J_3VeItQ" name="memberCardinality" maxValue="1" minValue="1"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZSGR2fEeaWU5J_3VeItQ" displayName="Contain SIBus member" mutable="true" name="Container of SIBus" dmoType="was:WasSIBusUnit" linkType="member">
+      <constraint:constraint.memberCardinality uuid="_dSZSGh2fEeaWU5J_3VeItQ" name="memberCardinality" maxValue="unbounded" minValue="0"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZSGx2fEeaWU5J_3VeItQ" displayName="Host on node" name="hostOnDefaultNode" dmoType="was:WasNode" linkType="hosting" use="required"/>
+    <core:link.member uuid="_dSZSHB2fEeaWU5J_3VeItQ" name="WebSphere61StandaloneCellContainsWasNodeGroup" source="#/WasCellUnit_138382" target="#/WasNodeGroupUnit_138382"/>
+    <core:link.member uuid="_dSZSHR2fEeaWU5J_3VeItQ" name="WebSphere61StandaloneCellContainsWasNode" source="#/WasCellUnit_138382" target="#/WasNodeUnit_138382"/>
+  </was:unit.wasCellUnit>
+  <os:unit.portConfigUnit uuid="_dSZ5AB2fEeaWU5J_3VeItQ" displayName="Port Configuration" name="PortConfigUnit_138382" configurationUnit="true">
+    <os:capability.port uuid="_dSZ5AR2fEeaWU5J_3VeItQ" displayName="dcs_unicast_address" name="dcs_unicast_address" linkType="dependency" applicationLayerProtocol="HTTP" port="9353" portName="dcs_unicast_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Ah2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Ax2fEeaWU5J_3VeItQ" displayName="bootstrap_address" name="bootstrap_address" linkType="dependency" port="2809" portName="bootstrap_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5BB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5BR2fEeaWU5J_3VeItQ" displayName="orb_listener_address" name="orb_listener_address" linkType="dependency" port="9100" portName="orb_listener_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Bh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Bx2fEeaWU5J_3VeItQ" displayName="sib_mq_endpoint_secure_address" name="sib_mq_endpoint_secure_address" linkType="dependency" applicationLayerProtocol="MQFAP" port="5578" portName="sib_mq_endpoint_secure_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5CB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5CR2fEeaWU5J_3VeItQ" description="" displayName="sib_mq_endpoint_address" name="sib_mq_endpoint_address" linkType="dependency" applicationLayerProtocol="MQFAP" port="5558" portName="sib_mq_endpoint_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Ch2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Cx2fEeaWU5J_3VeItQ" displayName="sib_endpoint_secure_address" name="sib_endpoint_secure_address" linkType="dependency" applicationLayerProtocol="JFAP" port="7286" portName="sib_endpoint_secure_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5DB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5DR2fEeaWU5J_3VeItQ" displayName="wc_defaulthost_secure" name="wc_defaulthost_secure" linkType="dependency" applicationLayerProtocol="HTTP" port="9443" portName="wc_defaulthost_secure" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Dh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Dx2fEeaWU5J_3VeItQ" displayName="wc_defaulthost" name="wc_defaulthost" linkType="dependency" applicationLayerProtocol="HTTP" port="9080" portName="wc_defaulthost" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5EB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5ER2fEeaWU5J_3VeItQ" displayName="sib_endpoint_address" name="sib_endpoint_address" linkType="dependency" applicationLayerProtocol="JFAP" port="7276" portName="sib_endpoint_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Eh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Ex2fEeaWU5J_3VeItQ" displayName="wc_adminhost_secure" name="wc_adminhost_secure" linkType="dependency" applicationLayerProtocol="HTTP" port="9043" portName="wc_adminhost_secure" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5FB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5FR2fEeaWU5J_3VeItQ" displayName="wc_adminhost" name="wc_adminhost" linkType="dependency" applicationLayerProtocol="HTTP" port="9060" portName="wc_adminhost" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Fh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Fx2fEeaWU5J_3VeItQ" displayName="csiv2_ssl_serverAuth_listener_address" name="csiv2_ssl_serverAuth_listener_address" linkType="dependency" port="9403" portName="csiv2_ssl_serverAuth_listener_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5GB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5GR2fEeaWU5J_3VeItQ" displayName="csiv2_ssl_mutualauth_listener_address" name="csiv2_ssl_mutualauth_listener_address" linkType="dependency" port="9402" portName="csiv2_ssl_mutualauth_listener_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Gh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5Gx2fEeaWU5J_3VeItQ" displayName="sas_ssl_serverAuth_listener_address" name="sas_ssl_serverAuth_listener_address" linkType="dependency" port="9401" portName="sas_ssl_serverAuth_listener_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5HB2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <os:capability.port uuid="_dSZ5HR2fEeaWU5J_3VeItQ" displayName="soap_connector_address" name="soap_connector_address" linkType="dependency" applicationLayerProtocol="HTTP" port="8880" portName="soap_connector_address" transportLayerProtocol="TCP">
+      <core:attributeMetaData uuid="_dSZ5Hh2fEeaWU5J_3VeItQ" attributeName="portName" mutable="true"/>
+    </os:capability.port>
+    <core:requirement uuid="_dSZ5Hx2fEeaWU5J_3VeItQ" displayName="PortConsumer" name="PortConsumer" dmoType="os:PortConsumer" linkType="hosting"/>
+  </os:unit.portConfigUnit>
+  <was:unit.wasNodeGroupUnit uuid="_dSZ5IB2fEeaWU5J_3VeItQ" name="WasNodeGroupUnit_138382" configurationUnit="true">
+    <was:capability.wasNodeGroup uuid="_dSZ5IR2fEeaWU5J_3VeItQ" displayName="Provide WAS Node Group" name="Provide WAS Node Group" linkType="any" isDefaultType="true" nodeGroupName="nodeGroup1"/>
+    <core:requirement uuid="_dSZ5Ih2fEeaWU5J_3VeItQ" displayName="Contained by cell" mutable="true" name="Cell" dmoType="was:WasCellUnit" linkType="member">
+      <constraint:constraint.groupCardinality uuid="_dSZ5Ix2fEeaWU5J_3VeItQ" name="groupCardinality" maxValue="1" minValue="1"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZ5JB2fEeaWU5J_3VeItQ" displayName="Group Nodes" mutable="true" name="Group Nodes" dmoType="was:WasNodeUnit" linkType="member">
+      <constraint:constraint.memberCardinality uuid="_dSZ5JR2fEeaWU5J_3VeItQ" name="memberCardinality" maxValue="unbounded" minValue="0"/>
+    </core:requirement>
+    <core:link.member uuid="_dSZ5Jh2fEeaWU5J_3VeItQ" name="WebSphereNodeGroupContainsWasNode" source="#/WasNodeGroupUnit_138382" target="#/WasNodeUnit_138382"/>
+  </was:unit.wasNodeGroupUnit>
+  <was:unit.wasClassLoaderConfigurationUnit uuid="_dSZ5Jx2fEeaWU5J_3VeItQ" displayName="Server Class Loader Policy" name="WasClassLoaderConfigurationUnit_138382" configurationUnit="true">
+    <was:capability.wasApplicationServerClassLoaderPolicy uuid="_dSZ5KB2fEeaWU5J_3VeItQ" displayName="Server Class Loader Policy" mutable="true" name="Server Class Loader Policy" linkType="any" order="PARENT_FIRST" policy="MULTIPLE">
+      <core:attributeMetaData uuid="_dSZ5KR2fEeaWU5J_3VeItQ" attributeName="order" mutable="true"/>
+      <core:attributeMetaData uuid="_dSZ5Kh2fEeaWU5J_3VeItQ" attributeName="policy" mutable="true"/>
+    </was:capability.wasApplicationServerClassLoaderPolicy>
+    <core:requirement uuid="_dSZ5Kx2fEeaWU5J_3VeItQ" displayName="Optional Shared Library" mutable="true" name="sharedLibrary" dmoType="was:SharedLibraryEntry" linkType="dependency" use="optional"/>
+    <core:requirement uuid="_dSZ5LB2fEeaWU5J_3VeItQ" displayName="WebSphere Server" mutable="true" name="WebSphereServer" dmoType="was:WasServer" linkType="hosting" use="required"/>
+  </was:unit.wasClassLoaderConfigurationUnit>
+  <was:unit.wasNodeUnit uuid="_dSZ5LR2fEeaWU5J_3VeItQ" name="WasNodeUnit_138382">
+    <was:capability.wasNode uuid="_dSZ5Lh2fEeaWU5J_3VeItQ" displayName="WebSphere Node" name="WebSphereNode" linkType="any" isDefaultProfile="true" nodeName="node1" profileLocation="C:\Program Files\IBM\WebSphere\AppServer\profiles\default" profileName="default" profileType="default" wasVersion="6.1">
+      <core:attributeMetaData uuid="_dSZ5Lx2fEeaWU5J_3VeItQ" attributeName="wasVersion" mutable="true"/>
+    </was:capability.wasNode>
+    <was:capability.wasSubstitutionVariable uuid="_dSZ5MB2fEeaWU5J_3VeItQ" displayName="Substitution variable" name="Substitution Variable" linkType="any"/>
+    <was:capability.wasConfigurationContainer uuid="_dSZ5MR2fEeaWU5J_3VeItQ" displayName="Configuration Container" name="Provide Configuration Container" linkType="any"/>
+    <was:capability.wasSharedLibContainer uuid="_dSZ5Mh2fEeaWU5J_3VeItQ" displayName="Provide shared library Container" name="SharedlibraryContainer" linkType="any"/>
+    <core:requirement uuid="_dSZ5Mx2fEeaWU5J_3VeItQ" displayName="Host on WAS installation" mutable="true" name="A hosting WAS system" dmoType="was:WasSystem" linkType="hosting"/>
+    <core:requirement uuid="_dSZ5NB2fEeaWU5J_3VeItQ" displayName="Member of NodeGroup" mutable="true" name="NodeGroup" dmoType="was:WasNodeGroupUnit" linkType="member">
+      <constraint:constraint.groupCardinality uuid="_dSZ5NR2fEeaWU5J_3VeItQ" name="groupCardinality" maxValue="unbounded" minValue="1"/>
+    </core:requirement>
+    <core:requirement uuid="_dSZ5Nh2fEeaWU5J_3VeItQ" displayName="Must contained by Cell" mutable="true" name="Cell" dmoType="was:WasCellUnit" linkType="member">
+      <constraint:constraint.groupCardinality uuid="_dSZ5Nx2fEeaWU5J_3VeItQ" name="groupCardinality" maxValue="1" minValue="1"/>
+    </core:requirement>
+    <core:link.hosting uuid="_dSZ5OB2fEeaWU5J_3VeItQ" name="hostedCell" source="#/WasNodeUnit_138382" target="#/WasCellUnit_138382"/>
+    <core:link.hosting uuid="_dSZ5OR2fEeaWU5J_3VeItQ" name="hostedServer" source="#/WasNodeUnit_138382" target="#/WebsphereAppServerUnit_138382"/>
+  </was:unit.wasNodeUnit>
+  <uml:unit.umlActorUnit uuid="_g0KvkB2fEeaWU5J_3VeItQ" displayName="System Actor" name="UMLActorUnit_162057" conceptual="true">
+    <uml:capability.umlActor uuid="_g0KvkR2fEeaWU5J_3VeItQ" displayName="System Actor Capability" name="SystemActorCapability" linkType="any" umlVisibilityKind="public"/>
+    <core:requirement uuid="_g0Kvkh2fEeaWU5J_3VeItQ" displayName="Location Group Req" name="LocationMem" dmoType="analysisDeploy:LocationUnit" linkType="member" use="optional">
+      <constraint:constraint.groupCardinality uuid="_g0Kvkx2fEeaWU5J_3VeItQ" name="groupCardinality" maxValue="1" minValue="0"/>
+    </core:requirement>
+  </uml:unit.umlActorUnit>
+  <net:unit.networkUnit uuid="_nnLUcB2fEeaWU5J_3VeItQ" displayName="IP Network" name="NetworkUnit_207671" configurationUnit="false">
+    <net:capability.ipsubnet uuid="_nnLUcR2fEeaWU5J_3VeItQ" displayName="Network Capability" name="IPSubnet"/>
+    <core:requirement uuid="_nnLUch2fEeaWU5J_3VeItQ" name="Contains Servers" dmoType="server:ServerUnit" linkType="member"/>
+  </net:unit.networkUnit>
+  <core:contract.explicit uuid="_VRA1cB2fEeaWU5J_3VeItQ" displayName="缺省情况下使所有单元成为公用可编辑单元" name="ExplicitContract_84551" defaultConceptualPolicy="public_editable" defaultPolicy="public_editable"/>
+</core:topology>

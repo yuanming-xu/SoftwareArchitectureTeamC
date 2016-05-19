@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<DeployNotation:DeployDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DeployNotation="http://www.ibm.com/ccl/soa/deploy/notation/1.0.0/" xmlns:core="http://www.ibm.com/ccl/soa/deploy/core/1.0.0/" xmlns:net="http://www.ibm.com/ccl/soa/deploy/net/1.0.0/" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:os="http://www.ibm.com/ccl/soa/deploy/os/1.0.0/" xmlns:sqlserver="http://www.ibm.com/ccl/soa/deploy/sqlserver/1.0.0/" xmlns:tomcat="http://www.ibm.com/ccl/soa/deploy/tomcat/1.0.0/" xmlns:uml="http://www.ibm.com/ccl/soa/deploy/uml/1.0.0/" xmi:id="_WP2cQB2fEeaWU5J_3VeItQ" type="DeployCore" name="部署1" measurementUnit="Himetric">
+  <children xmi:type="notation:Node" xmi:id="_aOs3cB2fEeaWU5J_3VeItQ" type="ListContainer">
+    <children xmi:type="notation:Node" xmi:id="_aO9WIB2fEeaWU5J_3VeItQ" type="DeployName"/>
+    <children xmi:type="notation:Node" xmi:id="_aPF5AB2fEeaWU5J_3VeItQ" type="HybridList">
+      <children xmi:type="notation:Node" xmi:id="_aPHHIB2fEeaWU5J_3VeItQ">
+        <children xmi:type="notation:Node" xmi:id="_aPjMAR2fEeaWU5J_3VeItQ" type="DeployName"/>
+        <children xmi:type="notation:Node" xmi:id="_aPjzEB2fEeaWU5J_3VeItQ" type="HybridList">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_aPjzER2fEeaWU5J_3VeItQ" collapsed="true"/>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_aPjzEh2fEeaWU5J_3VeItQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_aPjzEx2fEeaWU5J_3VeItQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_aPjzFB2fEeaWU5J_3VeItQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_aPHHIR2fEeaWU5J_3VeItQ" fontName="微软雅黑" fontHeight="8" fillColor="15390140" transparency="0" lineColor="14263149" lineWidth="1"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_aPHHIh2fEeaWU5J_3VeItQ"/>
+        <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_aPjMAB2fEeaWU5J_3VeItQ" backedupName="Port Configuration" backedupCategory="端口配置"/>
+        <element xmi:type="os:PortConfigUnit" href="部署1.topology#/PortConfigUnit_117727"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aPHHIx2fEeaWU5J_3VeItQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_aPF5AR2fEeaWU5J_3VeItQ" collapsed="true"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_aPF5Ah2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_aPF5Ax2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_aPF5BB2fEeaWU5J_3VeItQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_aOs3cR2fEeaWU5J_3VeItQ" fontName="微软雅黑" fontHeight="8" fillColor="15390140" transparency="0" lineColor="14263149" lineWidth="1"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_aOs3ch2fEeaWU5J_3VeItQ"/>
+    <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_aO8vEB2fEeaWU5J_3VeItQ" backedupName="Tomcat 5.5 WebServer" backedupCategory="Tomcat 5.5 服务器"/>
+    <element xmi:type="tomcat:TomcatWebServerUnit" href="部署1.topology#/TomcatWebServerUnit_117727"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aOs3cx2fEeaWU5J_3VeItQ" x="7116" y="2354"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_cik-kB2fEeaWU5J_3VeItQ" type="ListContainer">
+    <children xmi:type="notation:Node" xmi:id="_ci0PIR2fEeaWU5J_3VeItQ" type="DeployName"/>
+    <children xmi:type="notation:Node" xmi:id="_ci0PIh2fEeaWU5J_3VeItQ" type="HybridList">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ci0PIx2fEeaWU5J_3VeItQ" collapsed="true"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_ci0PJB2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ci0PJR2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ci0PJh2fEeaWU5J_3VeItQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_cik-kR2fEeaWU5J_3VeItQ" fontName="微软雅黑" fontHeight="8" fillColor="15390140" transparency="0" lineColor="14263149" lineWidth="1"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_cik-kh2fEeaWU5J_3VeItQ"/>
+    <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_ci0PIB2fEeaWU5J_3VeItQ" backedupName="SQL Server" backedupCategory="SqlServerUnit"/>
+    <element xmi:type="sqlserver:SqlServerUnit" href="部署1.topology#/SqlServerUnit_133368"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cik-kx2fEeaWU5J_3VeItQ" x="13070" y="8536"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_g0L9sB2fEeaWU5J_3VeItQ" type="ListContainer">
+    <children xmi:type="notation:Node" xmi:id="_g0rs8B2fEeaWU5J_3VeItQ" type="DeployName"/>
+    <children xmi:type="notation:Node" xmi:id="_g0rs8R2fEeaWU5J_3VeItQ" type="HybridList">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_g0rs8h2fEeaWU5J_3VeItQ" collapsed="true"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_g0rs8x2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_g0rs9B2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_g0rs9R2fEeaWU5J_3VeItQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_g0L9sR2fEeaWU5J_3VeItQ" fontName="微软雅黑" fontHeight="8" fillColor="15390140" transparency="0" lineColor="14263149" lineWidth="1"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_g0L9sh2fEeaWU5J_3VeItQ"/>
+    <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_g0rF4B2fEeaWU5J_3VeItQ" backedupName="System Actor" backedupCategory="参与者"/>
+    <element xmi:type="uml:UMLActorUnit" href="部署1.topology#/UMLActorUnit_162057"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g0L9sx2fEeaWU5J_3VeItQ" x="1746" y="926"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_nnMikB2fEeaWU5J_3VeItQ" type="ListContainer">
+    <children xmi:type="notation:Node" xmi:id="_nnePYR2fEeaWU5J_3VeItQ" type="DeployName"/>
+    <children xmi:type="notation:Node" xmi:id="_nne2cB2fEeaWU5J_3VeItQ" type="HybridList">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_nne2cR2fEeaWU5J_3VeItQ" collapsed="true"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_nne2ch2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_nne2cx2fEeaWU5J_3VeItQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_nne2dB2fEeaWU5J_3VeItQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_nnMikR2fEeaWU5J_3VeItQ" fontName="微软雅黑" fontHeight="8" fillColor="15390140" transparency="0" lineColor="14263149" lineWidth="1"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_nnMikh2fEeaWU5J_3VeItQ"/>
+    <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_nnePYB2fEeaWU5J_3VeItQ" backedupName="IP Network" backedupCategory="网络单元"/>
+    <element xmi:type="net:NetworkUnit" href="部署1.topology#/NetworkUnit_207671"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nnMikx2fEeaWU5J_3VeItQ" x="7408" y="7805"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_WP2cQR2fEeaWU5J_3VeItQ"/>
+  <styles xmi:type="DeployNotation:DeployStyle" xmi:id="_WP2cQh2fEeaWU5J_3VeItQ" figureImageURI="33"/>
+  <element xmi:type="core:Topology" href="部署1.topology#/"/>
+</DeployNotation:DeployDiagram>
