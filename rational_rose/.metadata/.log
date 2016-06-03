@@ -593,3 +593,19 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.osgi 2 1 2016-05-19 16:59:00.775
 !MESSAGE NLS missing message: ScriptCreationDialog_Units_the_script_depends_upon_ in: com.ibm.ccl.soa.deploy.operation.ui.Messages
+!SESSION 2016-06-03 16:05:50.527 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20130306_140761 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR4_FP1_20130306_1011_B140761
+JIT  - r11.b03_20130131_32403ifx1
+GC   - R26_Java726_SR4_FP1_20130306_1011_B140761_CMPRSS
+J9CL - 20130306_140761
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product com.ibm.rational.rsa.product.v90.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v90.ide
+
+!ENTRY org.eclipse.osgi 2 1 2016-06-03 16:16:40.844
+!MESSAGE NLS unused message: supercededFeature in: com.ibm.ws.st.core.internal.Messages
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2016-06-03 16:16:59.521
+!MESSAGE RAM 客户机未安装。请安装 RAM 客户机以启用 RAM 集成功能。
