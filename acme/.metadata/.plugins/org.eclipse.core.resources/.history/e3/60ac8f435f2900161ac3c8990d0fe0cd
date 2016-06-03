@@ -1,0 +1,98 @@
+System System1 = {
+
+    Component Model  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+
+    }
+    Component View0  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+        Port Port3  = {
+
+        }
+
+    }
+    Component Controller  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+
+    }
+    Connector Connector0  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector1  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector2  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector3  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector4  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Attachment Model.Port1 to Connector0.role1;
+    Attachment View0.Port1 to Connector0.role0;
+    Attachment Model.Port0 to Connector1.role0;
+    Attachment View0.Port0 to Connector1.role1;
+    Attachment View0.Port2 to Connector2.role1;
+    Attachment Controller.Port1 to Connector2.role0;
+    Attachment View0.Port3 to Connector3.role0;
+    Attachment Controller.Port2 to Connector3.role1;
+    Attachment Model.Port2 to Connector4.role0;
+    Attachment Controller.Port0 to Connector4.role1;
+}
+

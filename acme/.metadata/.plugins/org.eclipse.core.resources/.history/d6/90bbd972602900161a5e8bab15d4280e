@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AcmeModel>
+  <system name="System1">
+    <userdata key="vis-annotations">
+      <data>
+        <label fill="false" id="anno.0" lineStyle="1" lineWidth="1" text="State Change" zOrder="-1">
+          <foreground b="0" g="0" r="0"/>
+          <background b="255" g="255" r="255"/>
+          <bounds height="-1" width="100" x="363" y="149"/>
+          <font bold="false" height="9" italics="false" name="微软雅黑"/>
+        </label>
+        <label fill="false" id="anno.3" lineStyle="1" lineWidth="1" text="View Selection" zOrder="-1">
+          <foreground b="0" g="0" r="0"/>
+          <background b="255" g="255" r="255"/>
+          <bounds height="-1" width="100" x="211" y="258"/>
+          <font bold="false" height="9" italics="false" name="微软雅黑"/>
+        </label>
+        <label fill="false" id="anno.4" lineStyle="1" lineWidth="1" text="User Gestures" zOrder="-1">
+          <foreground b="0" g="0" r="0"/>
+          <background b="255" g="255" r="255"/>
+          <bounds height="-1" width="100" x="224" y="336"/>
+          <font bold="false" height="9" italics="false" name="微软雅黑"/>
+        </label>
+        <label fill="false" id="anno.5" lineStyle="1" lineWidth="1" text="Change Notification" zOrder="-1">
+          <foreground b="0" g="0" r="0"/>
+          <background b="255" g="255" r="255"/>
+          <bounds height="-1" width="100" x="164" y="189"/>
+          <font bold="false" height="9" italics="false" name="微软雅黑"/>
+        </label>
+        <label fill="false" id="anno.6" lineStyle="1" lineWidth="1" text="State Query" zOrder="-1">
+          <foreground b="0" g="0" r="0"/>
+          <background b="255" g="255" r="255"/>
+          <bounds height="-1" width="100" x="45" y="96"/>
+          <font bold="false" height="9" italics="false" name="微软雅黑"/>
+        </label>
+      </data>
+    </userdata>
+    <userdata key="SaveData">
+      <data date="16-6-3 下午3:53"/>
+    </userdata>
+    <userdata key="connection-patterns">
+      <data>
+        <portConnectionRule connector="Connector" name="">
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+        </portConnectionRule>
+      </data>
+    </userdata>
+    <component name="Model">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="273" y="55"/>
+      </userdata>
+      <port name="change_notification_send_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="7" rotation="0.0" x="223" y="62"/>
+        </userdata>
+      </port>
+      <port name="state_query_recv_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="-8" rotation="0.0" x="223" y="47"/>
+        </userdata>
+      </port>
+      <port name="state_change_recv_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="0" relPosY="25" rotation="0.0" x="273" y="80"/>
+        </userdata>
+      </port>
+    </component>
+    <component name="View0">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="68" y="322"/>
+      </userdata>
+      <port name="state_query_send_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-7" relPosY="-25" rotation="0.0" x="61" y="297"/>
+        </userdata>
+      </port>
+      <port name="change_notification_recv_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="8" relPosY="-25" rotation="0.0" x="76" y="297"/>
+        </userdata>
+      </port>
+      <port name="view_selection_recv_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-8" rotation="0.0" x="118" y="314"/>
+        </userdata>
+      </port>
+      <port name="user_gestures_send_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="7" rotation="0.0" x="118" y="329"/>
+        </userdata>
+      </port>
+    </component>
+    <component name="Controller">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="437" y="309"/>
+      </userdata>
+      <port name="view_selection_send_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="-8" rotation="0.0" x="387" y="301"/>
+        </userdata>
+      </port>
+      <port name="user_gestures_recv_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="7" rotation="0.0" x="387" y="316"/>
+        </userdata>
+      </port>
+      <port name="state_change_send_port">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="0" relPosY="-25" rotation="0.0" x="437" y="284"/>
+        </userdata>
+      </port>
+    </component>
+    <connector name="Connector0">
+      <userdata key="element-description">
+        <data><![CDATA[Change Notification]]></data>
+      </userdata>
+      <userdata key="vis-information">
+        <data rotation="0.0" x="173" y="158"/>
+      </userdata>
+      <role name="role0">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="76" y="297"/>
+        </userdata>
+      </role>
+      <role name="role1">
+        <userdata key="vis-information">
+          <data category="role" height="12" rotation="0.0" x="223" y="62"/>
+        </userdata>
+      </role>
+    </connector>
+    <connector name="Connector1">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="97" y="142"/>
+      </userdata>
+      <role name="role0">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="223" y="47"/>
+        </userdata>
+      </role>
+      <role name="role1">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="61" y="297"/>
+        </userdata>
+      </role>
+    </connector>
+    <connector name="Connector2">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="268" y="286"/>
+      </userdata>
+      <role name="role0">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="387" y="301"/>
+        </userdata>
+      </role>
+      <role name="role1">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="118" y="314"/>
+        </userdata>
+      </role>
+    </connector>
+    <connector name="Connector3">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="272" y="321"/>
+      </userdata>
+      <role name="role0">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="118" y="329"/>
+        </userdata>
+      </role>
+      <role name="role1">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="387" y="316"/>
+        </userdata>
+      </role>
+    </connector>
+    <connector name="Connector4">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="340" y="167"/>
+      </userdata>
+      <role name="role0">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="273" y="80"/>
+        </userdata>
+      </role>
+      <role name="role1">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="437" y="284"/>
+        </userdata>
+      </role>
+    </connector>
+  </system>
+</AcmeModel>

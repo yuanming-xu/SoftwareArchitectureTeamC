@@ -1,0 +1,98 @@
+System System1 = {
+
+    Component Model  = {
+        Port change_notification_send_port  = {
+
+        }
+        Port state_query_recv_port  = {
+
+        }
+        Port state_change_recv_port  = {
+
+        }
+
+    }
+    Component View0  = {
+        Port state_query_send_port  = {
+
+        }
+        Port change_notification_recv_port  = {
+
+        }
+        Port view_selection_recv_port  = {
+
+        }
+        Port user_gestures_send_port  = {
+
+        }
+
+    }
+    Component Controller  = {
+        Port view_selection_send_port  = {
+
+        }
+        Port user_gestures_recv_port  = {
+
+        }
+        Port state_change_send_port  = {
+
+        }
+
+    }
+    Connector Connector0  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector1  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector2  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector3  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Connector Connector4  = {
+        Role role0  = {
+
+        }
+        Role role1  = {
+
+        }
+
+    }
+    Attachment Model.change_notification_send_port to Connector0.role1;
+    Attachment View0.change_notification_recv_port to Connector0.role0;
+    Attachment Model.state_query_recv_port to Connector1.role0;
+    Attachment View0.state_query_send_port to Connector1.role1;
+    Attachment View0.view_selection_recv_port to Connector2.role1;
+    Attachment Controller.view_selection_send_port to Connector2.role0;
+    Attachment View0.user_gestures_send_port to Connector3.role0;
+    Attachment Controller.user_gestures_recv_port to Connector3.role1;
+    Attachment Model.state_change_recv_port to Connector4.role0;
+    Attachment Controller.state_change_send_port to Connector4.role1;
+}
+

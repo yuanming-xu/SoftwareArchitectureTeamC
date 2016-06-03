@@ -1,0 +1,205 @@
+!SESSION 2016-06-03 15:20:32.768 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @user.home/AcmeWorkspace -data L:\北大\周四晚，软件体系结构与设计\作业\SoftwareArchitectureTeamC\acme
+
+!ENTRY org.acmestudio.ui.property.tabbed 1 0 2016-06-03 15:21:55.046
+!MESSAGE Checking org.acmestudio.ui.MultiPageEditor
+
+!ENTRY org.acmestudio.ui.property.tabbed 1 0 2016-06-03 15:21:55.053
+!MESSAGE Checking org.acmestudio.ui.MultiPageEditor
+
+!ENTRY org.eclipse.jface 4 0 2016-06-03 15:21:55.104
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: AcmeModel getSystem may not be passed a null family argument.)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:172)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:387)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1002)
+	at org.acmestudio.ui.wizard.AcmeStudioNewWizard.performFinish(AcmeStudioNewWizard.java:85)
+	at org.acmestudio.ui.wizard.AcmeStudioNewSystemWizard.performFinish(AcmeStudioNewSystemWizard.java:258)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:799)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:429)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.IllegalArgumentException: AcmeModel getSystem may not be passed a null family argument.
+	at org.acmestudio.basicmodel.model.AcmeModel.getSystem(AcmeModel.java:199)
+	at org.acmestudio.basicmodel.model.AcmeModel.getSystem(AcmeModel.java:1)
+	at org.acmestudio.ui.wizard.AcmeStudioNewSystemWizard.doPostOpeningActions(AcmeStudioNewSystemWizard.java:305)
+	at org.acmestudio.ui.wizard.AcmeStudioNewWizard$2.run(AcmeStudioNewWizard.java:164)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2016-06-03 15:30:52.755
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: lookupName() should not be called with an empty string for a name.
+	at org.acmestudio.basicmodel.element.AcmeElement.lookupName(AcmeElement.java:317)
+	at org.acmestudio.basicmodel.element.AcmeElementInstance.lookupName(AcmeElementInstance.java:773)
+	at org.acmestudio.basicmodel.element.AcmeRole.lookupName(AcmeRole.java:80)
+	at org.acmestudio.basicmodel.element.AcmeElementInstance.lookupName(AcmeElementInstance.java:778)
+	at org.acmestudio.ui.editor.diagram.connection.ConnectionPattern.resolve(ConnectionPattern.java:132)
+	at org.acmestudio.ui.editor.diagram.command.RoleConnectCommand.execute(RoleConnectCommand.java:134)
+	at org.eclipse.gef.commands.CommandStack.execute(CommandStack.java:201)
+	at org.eclipse.gef.tools.AbstractTool.executeCommand(AbstractTool.java:425)
+	at org.eclipse.gef.tools.AbstractTool.executeCurrentCommand(AbstractTool.java:438)
+	at org.eclipse.gef.tools.ConnectionEndpointTracker.handleButtonUp(ConnectionEndpointTracker.java:172)
+	at org.acmestudio.ui.editor.diagram.policy.RoleEndpointTracker.handleButtonUp(RoleEndpointTracker.java:146)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1200)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:574)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:301)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:380)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:548)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:220)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.acmestudio.ui.property.tabbed 1 0 2016-06-03 15:38:59.953
+!MESSAGE Checking org.acmestudio.ui.MultiPageEditor
+
+!ENTRY org.eclipse.jface 4 0 2016-06-03 15:39:00.082
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: AcmeModel getSystem may not be passed a null family argument.)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:172)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:387)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1002)
+	at org.acmestudio.ui.wizard.AcmeStudioNewWizard.performFinish(AcmeStudioNewWizard.java:85)
+	at org.acmestudio.ui.wizard.AcmeStudioNewSystemWizard.performFinish(AcmeStudioNewSystemWizard.java:258)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:799)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:429)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.IllegalArgumentException: AcmeModel getSystem may not be passed a null family argument.
+	at org.acmestudio.basicmodel.model.AcmeModel.getSystem(AcmeModel.java:199)
+	at org.acmestudio.basicmodel.model.AcmeModel.getSystem(AcmeModel.java:1)
+	at org.acmestudio.ui.wizard.AcmeStudioNewSystemWizard.doPostOpeningActions(AcmeStudioNewSystemWizard.java:305)
+	at org.acmestudio.ui.wizard.AcmeStudioNewWizard$2.run(AcmeStudioNewWizard.java:164)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 49 more
+!SESSION 2016-06-03 15:49:44.988 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @user.home/AcmeWorkspace -data L:\北大\周四晚，软件体系结构与设计\作业\SoftwareArchitectureTeamC\acme
+
+!ENTRY org.acmestudio.ui.property.tabbed 1 0 2016-06-03 15:49:50.684
+!MESSAGE Checking org.acmestudio.ui.MultiPageEditor
+
+!ENTRY org.acmestudio.ui.property.tabbed 1 0 2016-06-03 15:49:50.690
+!MESSAGE Checking org.acmestudio.ui.MultiPageEditor

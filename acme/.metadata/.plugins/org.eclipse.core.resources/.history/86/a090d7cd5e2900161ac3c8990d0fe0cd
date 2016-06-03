@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AcmeModel>
+  <system name="System1">
+    <userdata key="SaveData">
+      <data date="16-6-3 下午3:40"/>
+    </userdata>
+    <userdata key="connection-patterns">
+      <data>
+        <portConnectionRule connector="Connector" name="">
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+        </portConnectionRule>
+      </data>
+    </userdata>
+    <component name="Component0">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="273" y="55"/>
+      </userdata>
+      <port name="Port0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="-8" rotation="0.0" x="223" y="47"/>
+        </userdata>
+      </port>
+      <port name="Port1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="7" rotation="0.0" x="223" y="62"/>
+        </userdata>
+      </port>
+      <port name="Port2">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="0" relPosY="25" rotation="0.0" x="273" y="80"/>
+        </userdata>
+      </port>
+    </component>
+    <component name="Component1">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="100" y="274"/>
+      </userdata>
+      <port name="Port0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-7" relPosY="-25" rotation="0.0" x="93" y="249"/>
+        </userdata>
+      </port>
+      <port name="Port1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="8" relPosY="-25" rotation="0.0" x="108" y="249"/>
+        </userdata>
+      </port>
+      <port name="Port2">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-8" rotation="0.0" x="150" y="266"/>
+        </userdata>
+      </port>
+      <port name="Port3">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="7" rotation="0.0" x="150" y="281"/>
+        </userdata>
+      </port>
+    </component>
+    <component name="Component2">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="364" y="275"/>
+      </userdata>
+      <port name="Port0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="0" relPosY="-25" rotation="0.0" x="364" y="250"/>
+        </userdata>
+      </port>
+      <port name="Port1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="-8" rotation="0.0" x="314" y="267"/>
+        </userdata>
+      </port>
+      <port name="Port2">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="7" rotation="0.0" x="314" y="282"/>
+        </userdata>
+      </port>
+    </component>
+  </system>
+</AcmeModel>

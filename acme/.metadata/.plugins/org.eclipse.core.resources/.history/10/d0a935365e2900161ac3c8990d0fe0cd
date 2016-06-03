@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AcmeModel>
+  <system name="System1">
+    <userdata key="SaveData">
+      <data date="16-6-3 下午3:38"/>
+    </userdata>
+    <userdata key="connection-patterns">
+      <data>
+        <portConnectionRule connector="Connector" name="">
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+        </portConnectionRule>
+      </data>
+    </userdata>
+    <component name="Participant0">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="330" y="91"/>
+      </userdata>
+      <port name="AnnouncePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="-50" relPosY="8" rotation="0.0" x="280" y="99"/>
+        </userdata>
+      </port>
+      <port name="ReceivePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="-50" relPosY="-12" rotation="0.0" x="280" y="79"/>
+        </userdata>
+      </port>
+      <port name="ReceivePort1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="26" relPosY="25" rotation="0.0" x="356" y="116"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesAnnouncePortT_ReceivePortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type AnnouncePortT,ReceivePortT" label="Has ports of type AnnouncePortT,ReceivePortT"/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="Participant1">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="74" y="321"/>
+      </userdata>
+      <port name="AnnouncePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="-31" relPosY="-25" rotation="0.0" x="43" y="296"/>
+        </userdata>
+      </port>
+      <port name="AnnouncePort1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="50" relPosY="11" rotation="0.0" x="124" y="332"/>
+        </userdata>
+      </port>
+      <port name="ReceivePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="50" relPosY="-11" rotation="0.0" x="124" y="310"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesAnnouncePortT_ReceivePortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type AnnouncePortT,ReceivePortT" label="Has ports of type AnnouncePortT,ReceivePortT"/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="Participant2">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="318" y="318"/>
+      </userdata>
+      <port name="AnnouncePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="17" relPosY="-25" rotation="0.0" x="335" y="293"/>
+        </userdata>
+      </port>
+      <port name="AnnouncePort1">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="-50" relPosY="-10" rotation="0.0" x="268" y="308"/>
+        </userdata>
+      </port>
+      <port name="ReceivePort0">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="false" relPosX="-50" relPosY="13" rotation="0.0" x="268" y="331"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesAnnouncePortT_ReceivePortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type AnnouncePortT,ReceivePortT" label="Has ports of type AnnouncePortT,ReceivePortT"/>
+        </userdata>
+      </design-rule>
+    </component>
+  </system>
+</AcmeModel>

@@ -1,0 +1,43 @@
+System System1 = {
+
+    Component Component0  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+
+    }
+    Component Component1  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+        Port Port3  = {
+
+        }
+
+    }
+    Component Component2  = {
+        Port Port0  = {
+
+        }
+        Port Port1  = {
+
+        }
+        Port Port2  = {
+
+        }
+
+    }
+}
+

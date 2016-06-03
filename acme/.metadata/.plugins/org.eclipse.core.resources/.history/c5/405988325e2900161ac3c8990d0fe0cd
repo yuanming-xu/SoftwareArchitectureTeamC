@@ -1,0 +1,13 @@
+import $AS_GLOBAL_PATH/families/ClientServerFam.acme;
+import $AS_GLOBAL_PATH/families/PubSubFam.acme;
+import $AS_GLOBAL_PATH/families/LocalCallReturnFam.acme;
+import $AS_GLOBAL_PATH/families/DataflowFam.acme;
+import $AS_GLOBAL_PATH/families/CallReturnFam.acme;
+import $AS_GLOBAL_PATH/families/EventBasedFam.acme;
+import $AS_GLOBAL_PATH/families/BatchSequentialFam.acme;
+import $AS_GLOBAL_PATH/families/PipeAndFilter.acme;
+import $AS_GLOBAL_PATH/families/RemoteCallReturnFam.acme;
+import $AS_GLOBAL_PATH/families/IndirectInvocationFam.acme;
+import $AS_GLOBAL_PATH/families/RepositoryFam.acme;
+
+System System1 : ClientServerFam, PubSubFam, LocalCallReturnFam, DataflowFam, CallReturnFam, EventBasedFam, BatchSequentialFam, PipeAndFilterFam, RemoteCallReturnFam, IndirectInvocationFam, RepositoryFam = new ClientServerFam, PubSubFam, LocalCallReturnFam, DataflowFam, CallReturnFam, EventBasedFam, BatchSequentialFam, PipeAndFilterFam, RemoteCallReturnFam, IndirectInvocationFam, RepositoryFam;
