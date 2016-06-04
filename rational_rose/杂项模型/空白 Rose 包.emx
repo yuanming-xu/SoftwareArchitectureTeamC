@@ -894,7 +894,7 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_TgQKsByoEea_VpeGrx2EFg" name="查看商品详情"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_U5hDsByoEea_VpeGrx2EFg" name="批量出库"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WuK4MByoEea_VpeGrx2EFg" name="批量入库"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_XzwnQByoEea_VpeGrx2EFg" name="管理销售销售记录"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XzwnQByoEea_VpeGrx2EFg" name="管理销售记录"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_cUJpQByoEea_VpeGrx2EFg" name="添加新用户"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_d0W3wByoEea_VpeGrx2EFg" name="查看用户列表"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_e1RiMByoEea_VpeGrx2EFg" name="管理客户信息"/>
