@@ -37,8 +37,10 @@
         </javaModelGenerator>  
   
 	<!-- sqlMap配置 -->
-        <sqlMapGenerator targetPackage="cn.edu.pku.ss.sa.teamc.dao.xml" targetProject="src/main/java">  
+        <sqlMapGenerator targetPackage="cn.edu.pku.ss.sa.teamc.dao.xml" targetProject="src/main/java">        	  
             <property name="enableSubPackages" value="true" />  
+            <property name="override" value="true"/>
+            <property name="mergeable" value="false"/>
         </sqlMapGenerator>  
 	
   	<!-- DAO接口的生成 -->

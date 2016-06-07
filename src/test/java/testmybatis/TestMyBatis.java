@@ -37,7 +37,7 @@ public class TestMyBatis {
     @Test  
     public void test1() {  
         TUser user = dao.getUserByName("test"); 
-         System.out.println(user.getUsername()); 
+         System.out.println(user.getName()); 
         // logger.info("值："+user.getUserName());  
         logger.info(JSON.toJSONString(user));  
     }  
