@@ -12,4 +12,28 @@
 		<list key="textEntries">
 		</list>
 	</section>
+	<section name="ShowViewDialog">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="com.ibm.rsaz.analysis.core.ui.views.ResultsFrameView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="224" key="DIALOG_Y_ORIGIN"/>
+		<item value="425" key="DIALOG_HEIGHT"/>
+		<item value="826" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|0|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="com.ibm.rsaz.analysis.core.ui"/>
+			<item value="org.eclipse.hyades.trace.internal.ui.trace"/>
+			<item value="com.ibm.xtools.modeling"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="com.ibm.xtools.modeler.ui.wizards.uml2exportwizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="com.ibm.xtools.modeling.export"/>
+		</list>
+	</section>
 </section>

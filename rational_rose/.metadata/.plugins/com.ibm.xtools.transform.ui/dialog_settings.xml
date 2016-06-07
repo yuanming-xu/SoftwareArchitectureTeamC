@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="150" key="Java 至 UML 扩展(&amp;X)_标识_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+	<item value="150" key="UML 至 Java 扩展(&amp;I)_标识_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+	<item value="150" key="Java 至 UML 扩展(&amp;X)_名称_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+	<item value="150" key="Java 至 UML 扩展(&amp;X)_描述_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+	<item value="150" key="UML 至 Java 扩展(&amp;I)_名称_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+	<item value="150" key="UML 至 Java 扩展(&amp;I)_描述_EXTENSIONS_TABLE_COLUMN_WIDTH"/>
+</section>

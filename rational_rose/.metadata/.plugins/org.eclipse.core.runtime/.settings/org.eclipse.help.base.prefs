@@ -7,3 +7,4 @@ remoteHelpPath=/infocenter/rsahelp/v9,/help
 remoteHelpPort=80,63650
 remoteHelpPreferred=true
 remoteHelpProtocol=http,http
+scope=

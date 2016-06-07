@@ -9,4 +9,14 @@
 			<item value="Package" key="com.ibm.xtools.modeler.templates.blankRoseUMLModel"/>
 		</section>
 	</section>
+	<section name="Uml2ExportWizard">
+		<item value="true" key="RecreateIDs"/>
+		<item value="true" key="WorkspaceSelected"/>
+		<item value="false" key="UML2ExportAppliedProfiles"/>
+		<item value="" key="DefaultDirectoryPath"/>
+		<item value="/SoftwareArchitectureTeamC" key="WorkspacePath"/>
+		<list key="SourceSelections">
+			<item value="/SoftwareArchitectureTeamC/rational_rose/杂项模型/空白 Rose 包.emx"/>
+		</list>
+	</section>
 </section>

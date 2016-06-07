@@ -1,0 +1,2 @@
+INDEX VERSION 1.3+L:\北大\周四晚，软件体系结构与设计\作业\SoftwareArchitectureTeamC\rational_rose\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+203488191.index

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational 建模平台（com.ibm.xtools.rmp）" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+  <uml:Package xmi:id="_3gM_0CyLEeaXbc5tDEZiJA" name="hahaha3">
+    <packageImport xmi:id="_3gNm5SyLEeaXbc5tDEZiJA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_3gON8CyLEeaXbc5tDEZiJA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3gmBYCyLEeaXbc5tDEZiJA" name="cn">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3gmBYSyLEeaXbc5tDEZiJA" name="edu">
+        <packagedElement xmi:type="uml:Package" xmi:id="_3gmBYiyLEeaXbc5tDEZiJA" name="pku">
+          <packagedElement xmi:type="uml:Package" xmi:id="_3gmBYyyLEeaXbc5tDEZiJA" name="ss">
+            <packagedElement xmi:type="uml:Package" xmi:id="_3gmBZCyLEeaXbc5tDEZiJA" name="sa">
+              <packagedElement xmi:type="uml:Package" xmi:id="_3gmBZSyLEeaXbc5tDEZiJA" name="teamc">
+                <packagedElement xmi:type="uml:Package" xmi:id="_3gmocCyLEeaXbc5tDEZiJA" name="service">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_3gmocSyLEeaXbc5tDEZiJA" name="impl">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_3gmociyLEeaXbc5tDEZiJA" name="TUserServiceImpl" clientDependency="_3hW2YCyLEeaXbc5tDEZiJA">
+                      <ownedComment xmi:id="_3gmocyyLEeaXbc5tDEZiJA" annotatedElement="_3gmociyLEeaXbc5tDEZiJA">
+                        <body>&lt;br>@author&amp;nbsp;xuyuanming&lt;br>&lt;br>2016年4月25日下午5:40:24</body>
+                      </ownedComment>
+                      <ownedAttribute xmi:id="_3g-b4CyLEeaXbc5tDEZiJA" name="salt" visibility="private" isLeaf="true" isStatic="true">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3hARECyLEeaXbc5tDEZiJA" value="xuyuanming"/>
+                      </ownedAttribute>
+                      <ownedAttribute xmi:id="_3hARESyLEeaXbc5tDEZiJA" name="dao" visibility="private">
+                        <type xmi:type="uml:Interface" href="mmi:///#jsrctype%5Ename=TUserMapper%5Bjcu%5Ename=TUserMapper.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.sqlmapper%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Interface"/>
+                      </ownedAttribute>
+                      <interfaceRealization xmi:id="_3hW2YCyLEeaXbc5tDEZiJA" supplier="_3g7YkCyLEeaXbc5tDEZiJA" client="_3gmociyLEeaXbc5tDEZiJA" contract="_3g7YkCyLEeaXbc5tDEZiJA"/>
+                      <ownedOperation xmi:id="_3hCGQCyLEeaXbc5tDEZiJA" name="getUserByName" visibility="public">
+                        <ownedParameter xmi:id="_3hCGQSyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                          <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TUser%5Bjcu%5Ename=TUser.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hCtUCyLEeaXbc5tDEZiJA" name="username">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                      </ownedOperation>
+                      <ownedOperation xmi:id="_3hDUYCyLEeaXbc5tDEZiJA" name="getUserByNameAndPassword" visibility="public">
+                        <ownedParameter xmi:id="_3hDUYSyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                          <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TUser%5Bjcu%5Ename=TUser.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hD7cCyLEeaXbc5tDEZiJA" name="username">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hD7cSyLEeaXbc5tDEZiJA" name="password">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                      </ownedOperation>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_3g5jYCyLEeaXbc5tDEZiJA" name="TCustomerServiceImpl" clientDependency="_3hagwSyLEeaXbc5tDEZiJA">
+                      <ownedComment xmi:id="_3g5jYSyLEeaXbc5tDEZiJA" annotatedElement="_3g5jYCyLEeaXbc5tDEZiJA">
+                        <body>&lt;br>@author&amp;nbsp;xuyuanming&lt;br>&lt;br>2016年4月25日下午5:40:24</body>
+                      </ownedComment>
+                      <ownedAttribute xmi:id="_3hXdcCyLEeaXbc5tDEZiJA" name="dao" visibility="private">
+                        <type xmi:type="uml:Interface" href="mmi:///#jsrctype%5Ename=TCustomerMapper%5Bjcu%5Ename=TCustomerMapper.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.sqlmapper%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Interface"/>
+                      </ownedAttribute>
+                      <interfaceRealization xmi:id="_3hagwSyLEeaXbc5tDEZiJA" supplier="_3g7_oCyLEeaXbc5tDEZiJA" client="_3g5jYCyLEeaXbc5tDEZiJA" contract="_3g7_oCyLEeaXbc5tDEZiJA"/>
+                      <ownedOperation xmi:id="_3hZSoCyLEeaXbc5tDEZiJA" name="addCustomer" visibility="public">
+                        <ownedParameter xmi:id="_3hZSoSyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                          <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TCustomer%5Bjcu%5Ename=TCustomer.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hZ5sCyLEeaXbc5tDEZiJA" name="name">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hZ5sSyLEeaXbc5tDEZiJA" name="phone">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                        <ownedParameter xmi:id="_3hagwCyLEeaXbc5tDEZiJA" name="address">
+                          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        </ownedParameter>
+                      </ownedOperation>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_3g7YkCyLEeaXbc5tDEZiJA" name="TUserService">
+                    <ownedComment xmi:id="_3g7YkSyLEeaXbc5tDEZiJA" annotatedElement="_3g7YkCyLEeaXbc5tDEZiJA">
+                      <body>&lt;br>@author&amp;nbsp;xuyuanming&lt;br>&lt;br>2016年6月7日下午2:45:29</body>
+                    </ownedComment>
+                    <ownedOperation xmi:id="_3hbH0CyLEeaXbc5tDEZiJA" name="getUserByName" visibility="public">
+                      <ownedComment xmi:id="_3hbH0SyLEeaXbc5tDEZiJA" annotatedElement="_3hbH0CyLEeaXbc5tDEZiJA">
+                        <body>根据用户名查找用户&lt;br>@param&amp;nbsp;username&lt;br>@return</body>
+                      </ownedComment>
+                      <ownedParameter xmi:id="_3hbu4CyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                        <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TUser%5Bjcu%5Ename=TUser.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hbu4SyLEeaXbc5tDEZiJA" name="username">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_3hcV8CyLEeaXbc5tDEZiJA" name="getUserByNameAndPassword" visibility="public">
+                      <ownedComment xmi:id="_3hcV8SyLEeaXbc5tDEZiJA" annotatedElement="_3hcV8CyLEeaXbc5tDEZiJA">
+                        <body>根据用户名和密码查找用户&lt;br>@param&amp;nbsp;username&lt;br>@param&amp;nbsp;password&lt;br>@return</body>
+                      </ownedComment>
+                      <ownedParameter xmi:id="_3hc9ASyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                        <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TUser%5Bjcu%5Ename=TUser.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hdkECyLEeaXbc5tDEZiJA" name="username">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hdkESyLEeaXbc5tDEZiJA" name="password">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_3g7_oCyLEeaXbc5tDEZiJA" name="TCustomerService">
+                    <ownedComment xmi:id="_3g7_oSyLEeaXbc5tDEZiJA" annotatedElement="_3g7_oCyLEeaXbc5tDEZiJA">
+                      <body>&lt;br>@author&amp;nbsp;xuyuanming&lt;br>&lt;br>2016年6月7日下午2:45:24</body>
+                    </ownedComment>
+                    <ownedOperation xmi:id="_3heLICyLEeaXbc5tDEZiJA" name="addCustomer" visibility="public">
+                      <ownedComment xmi:id="_3heLISyLEeaXbc5tDEZiJA" annotatedElement="_3heLICyLEeaXbc5tDEZiJA">
+                        <body>添加客户&lt;br>@param&amp;nbsp;name&lt;br>@param&amp;nbsp;phone&lt;br>@param&amp;nbsp;address</body>
+                      </ownedComment>
+                      <ownedParameter xmi:id="_3heyMCyLEeaXbc5tDEZiJA" name="返回参数" direction="return">
+                        <type xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TCustomer%5Bjcu%5Ename=TCustomer.java%5Bjpack%5Ename=cn.edu.pku.ss.sa.teamc.dao.model%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=SoftwareArchitectureTeamC%5D%5D%5D%5D$uml.Class"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hfZQCyLEeaXbc5tDEZiJA" name="name">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hfZQSyLEeaXbc5tDEZiJA" name="phone">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_3hfZQiyLEeaXbc5tDEZiJA" name="address">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_3gM_0SyLEeaXbc5tDEZiJA">
+      <eAnnotations xmi:id="_3gNm4CyLEeaXbc5tDEZiJA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_3gNm4SyLEeaXbc5tDEZiJA">
+      <eAnnotations xmi:id="_3gNm4iyLEeaXbc5tDEZiJA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_3gNm4yyLEeaXbc5tDEZiJA">
+      <eAnnotations xmi:id="_3gNm5CyLEeaXbc5tDEZiJA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_3gnPgCyLEeaXbc5tDEZiJA" base_Comment="_3gmocyyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3g6KcCyLEeaXbc5tDEZiJA" base_Comment="_3g5jYSyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3g7YkiyLEeaXbc5tDEZiJA" base_Comment="_3g7YkSyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3g7_oiyLEeaXbc5tDEZiJA" base_Comment="_3g7_oSyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3hbH0iyLEeaXbc5tDEZiJA" base_Comment="_3hbH0SyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3hc9ACyLEeaXbc5tDEZiJA" base_Comment="_3hcV8SyLEeaXbc5tDEZiJA"/>
+  <Default:Documentation xmi:id="_3heLIiyLEeaXbc5tDEZiJA" base_Comment="_3heLISyLEeaXbc5tDEZiJA"/>
+</xmi:XMI>

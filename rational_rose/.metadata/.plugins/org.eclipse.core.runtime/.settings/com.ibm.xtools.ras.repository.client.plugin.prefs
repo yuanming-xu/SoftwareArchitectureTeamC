@@ -1,0 +1,2 @@
+com.ibm.xtools.patterns.repository.provider=com.ibm.xtools.patterns.repository.provider.internal.PatternPluginAssetProvider
+eclipse.preferences.version=1

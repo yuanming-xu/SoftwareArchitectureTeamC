@@ -1,0 +1,3 @@
+REPOSITORY_INSTANCES_KEY=<?xml version\="1.0" encoding\="UTF-8"?><repository-instances version\="1"><repository-instance id\="com.ibm.xtools.patterns.repository.provider" name\="\u6A21\u5F0F\u5B58\u50A8\u5E93" type\="com.ibm.xtools.ras.repository.client.plugin"/></repository-instances>
+com.ibm.xtools.patterns.repository.provider=true
+eclipse.preferences.version=1

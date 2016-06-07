@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_DBkWWCyCEeaXbc5tDEZiJA" name="空白 Rose 包">
+  <packageImport xmi:id="_DBkWWSyCEeaXbc5tDEZiJA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkWWiyCEeaXbc5tDEZiJA" name="库存管理员"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWWyyCEeaXbc5tDEZiJA" name="查看商品列表"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWXCyCEeaXbc5tDEZiJA" name="添加商品种类"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWXSyCEeaXbc5tDEZiJA" name="搜索商品"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWXiyCEeaXbc5tDEZiJA" name="查看商品详情"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWXyyCEeaXbc5tDEZiJA" name="批量出库"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWYCyCEeaXbc5tDEZiJA" name="批量入库"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWYSyCEeaXbc5tDEZiJA" name="管理销售记录"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWYiyCEeaXbc5tDEZiJA" name="添加新用户"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWYyyCEeaXbc5tDEZiJA" name="查看用户列表"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWZCyCEeaXbc5tDEZiJA" name="管理客户信息"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkWZSyCEeaXbc5tDEZiJA" name="销售员"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkWZiyCEeaXbc5tDEZiJA" name="客户"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkWZyyCEeaXbc5tDEZiJA" name="系统管理员">
+    <generalization xmi:id="_DBkWaCyCEeaXbc5tDEZiJA" general="_DBkW5SyCEeaXbc5tDEZiJA"/>
+    <generalization xmi:id="_DBkWaSyCEeaXbc5tDEZiJA" general="_DBkW5CyCEeaXbc5tDEZiJA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWaiyCEeaXbc5tDEZiJA" name="管理访问权限"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkWayyCEeaXbc5tDEZiJA" name="备份/还原数据"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWbCyCEeaXbc5tDEZiJA" memberEnd="_DBkWbSyCEeaXbc5tDEZiJA _DBkWcCyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWbSyCEeaXbc5tDEZiJA _DBkWcCyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWbSyCEeaXbc5tDEZiJA" name="搜索商品" visibility="private" type="_DBkWXSyCEeaXbc5tDEZiJA" association="_DBkWbCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWbiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWbyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWcCyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWbCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWcSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWciyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWcyyCEeaXbc5tDEZiJA" memberEnd="_DBkWdCyCEeaXbc5tDEZiJA _DBkWdyyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWdCyCEeaXbc5tDEZiJA _DBkWdyyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWdCyCEeaXbc5tDEZiJA" name="搜索商品" visibility="private" type="_DBkWXSyCEeaXbc5tDEZiJA" association="_DBkWcyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWdSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWdiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWdyyCEeaXbc5tDEZiJA" name="销售员" visibility="private" type="_DBkWZSyCEeaXbc5tDEZiJA" association="_DBkWcyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWeCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWeSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWeiyCEeaXbc5tDEZiJA" memberEnd="_DBkWeyyCEeaXbc5tDEZiJA _DBkWfiyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWeyyCEeaXbc5tDEZiJA _DBkWfiyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWeyyCEeaXbc5tDEZiJA" name="查看商品列表" visibility="private" type="_DBkWWyyCEeaXbc5tDEZiJA" association="_DBkWeiyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWfCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWfSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWfiyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWeiyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWfyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWgCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWgSyCEeaXbc5tDEZiJA" memberEnd="_DBkWgiyCEeaXbc5tDEZiJA _DBkWhSyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWgiyCEeaXbc5tDEZiJA _DBkWhSyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWgiyCEeaXbc5tDEZiJA" name="查看商品详情" visibility="private" type="_DBkWXiyCEeaXbc5tDEZiJA" association="_DBkWgSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWgyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWhCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWhSyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWgSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWhiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWhyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWiCyCEeaXbc5tDEZiJA" memberEnd="_DBkWiSyCEeaXbc5tDEZiJA _DBkWjCyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWiSyCEeaXbc5tDEZiJA _DBkWjCyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWiSyCEeaXbc5tDEZiJA" name="批量入库" visibility="private" type="_DBkWYCyCEeaXbc5tDEZiJA" association="_DBkWiCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWiiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWiyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWjCyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWiCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWjSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWjiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWjyyCEeaXbc5tDEZiJA" memberEnd="_DBkWkCyCEeaXbc5tDEZiJA _DBkWkyyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWkCyCEeaXbc5tDEZiJA _DBkWkyyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWkCyCEeaXbc5tDEZiJA" name="销售记录的增删改查" visibility="private" type="_DBkWYSyCEeaXbc5tDEZiJA" association="_DBkWjyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWkSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWkiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWkyyCEeaXbc5tDEZiJA" name="销售员" visibility="private" type="_DBkWZSyCEeaXbc5tDEZiJA" association="_DBkWjyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWlCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWlSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWliyCEeaXbc5tDEZiJA" memberEnd="_DBkWlyyCEeaXbc5tDEZiJA _DBkWmiyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWlyyCEeaXbc5tDEZiJA _DBkWmiyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWlyyCEeaXbc5tDEZiJA" name="添加商品种类" visibility="private" type="_DBkWXCyCEeaXbc5tDEZiJA" association="_DBkWliyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWmCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWmSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWmiyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWliyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWmyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWnCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWnSyCEeaXbc5tDEZiJA" memberEnd="_DBkWniyCEeaXbc5tDEZiJA _DBkWoSyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWniyCEeaXbc5tDEZiJA _DBkWoSyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWniyCEeaXbc5tDEZiJA" name="批量出库" visibility="private" type="_DBkWXyyCEeaXbc5tDEZiJA" association="_DBkWnSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWnyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWoCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWoSyCEeaXbc5tDEZiJA" name="库存管理员" visibility="private" type="_DBkWWiyCEeaXbc5tDEZiJA" association="_DBkWnSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWoiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWoyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWpCyCEeaXbc5tDEZiJA" memberEnd="_DBkWpSyCEeaXbc5tDEZiJA _DBkWqCyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWpSyCEeaXbc5tDEZiJA _DBkWqCyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWpSyCEeaXbc5tDEZiJA" name="增删改查客户信息" visibility="private" type="_DBkWZCyCEeaXbc5tDEZiJA" association="_DBkWpCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWpiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWpyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWqCyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkW5SyCEeaXbc5tDEZiJA" association="_DBkWpCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWqSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWqiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWqyyCEeaXbc5tDEZiJA" memberEnd="_DBkWrCyCEeaXbc5tDEZiJA _DBkWryyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWrCyCEeaXbc5tDEZiJA _DBkWryyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWrCyCEeaXbc5tDEZiJA" name="访问控制" visibility="private" type="_DBkWaiyCEeaXbc5tDEZiJA" association="_DBkWqyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWrSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWriyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWryyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkWZyyCEeaXbc5tDEZiJA" association="_DBkWqyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWsCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWsSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWsiyCEeaXbc5tDEZiJA" memberEnd="_DBkWsyyCEeaXbc5tDEZiJA _DBkWtiyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWsyyCEeaXbc5tDEZiJA _DBkWtiyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWsyyCEeaXbc5tDEZiJA" name="查看用户列表" visibility="private" type="_DBkWYyyCEeaXbc5tDEZiJA" association="_DBkWsiyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWtCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWtSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWtiyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkW5SyCEeaXbc5tDEZiJA" association="_DBkWsiyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWtyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWuCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWuSyCEeaXbc5tDEZiJA" memberEnd="_DBkWuiyCEeaXbc5tDEZiJA _DBkWvSyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWuiyCEeaXbc5tDEZiJA _DBkWvSyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWuiyCEeaXbc5tDEZiJA" name="添加新用户" visibility="private" type="_DBkWYiyCEeaXbc5tDEZiJA" association="_DBkWuSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWuyyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWvCyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWvSyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkW5SyCEeaXbc5tDEZiJA" association="_DBkWuSyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWviyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWvyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWwCyCEeaXbc5tDEZiJA" memberEnd="_DBkWwSyCEeaXbc5tDEZiJA _DBkWxCyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWwSyCEeaXbc5tDEZiJA _DBkWxCyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWwSyCEeaXbc5tDEZiJA" name="数据库导入导出" visibility="private" type="_DBkWayyCEeaXbc5tDEZiJA" association="_DBkWwCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWwiyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWwyyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWxCyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkW5CyCEeaXbc5tDEZiJA" association="_DBkWwCyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWxSyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWxiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWxyyCEeaXbc5tDEZiJA" memberEnd="_DBkWyCyCEeaXbc5tDEZiJA _DBkWyyyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWyCyCEeaXbc5tDEZiJA _DBkWyyyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWyCyCEeaXbc5tDEZiJA" name="销售记录的增删改查" visibility="private" type="_DBkWYSyCEeaXbc5tDEZiJA" association="_DBkWxyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWySyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWyiyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkWyyyCEeaXbc5tDEZiJA" name="" visibility="private" type="_DBkWuSyCEeaXbc5tDEZiJA" association="_DBkWxyyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkWzCyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkWzSyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkWziyCEeaXbc5tDEZiJA" memberEnd="_DBkWzyyCEeaXbc5tDEZiJA _DBkW0iyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkWzyyCEeaXbc5tDEZiJA _DBkW0iyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkWzyyCEeaXbc5tDEZiJA" name="查看商品详情" visibility="private" type="_DBkWXiyCEeaXbc5tDEZiJA" association="_DBkWziyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW0CyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW0SyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkW0iyCEeaXbc5tDEZiJA" name="销售员" visibility="private" type="_DBkWZSyCEeaXbc5tDEZiJA" association="_DBkWziyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW0yyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW1CyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DBkW1SyCEeaXbc5tDEZiJA" name="销售商品"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkW1iyCEeaXbc5tDEZiJA" memberEnd="_DBkW1yyCEeaXbc5tDEZiJA _DBkW2iyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkW1yyCEeaXbc5tDEZiJA _DBkW2iyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkW1yyCEeaXbc5tDEZiJA" name="销售" visibility="private" type="_DBkW1SyCEeaXbc5tDEZiJA" association="_DBkW1iyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW2CyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW2SyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkW2iyCEeaXbc5tDEZiJA" name="销售员" visibility="private" type="_DBkWZSyCEeaXbc5tDEZiJA" association="_DBkW1iyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW2yyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW3CyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkW3SyCEeaXbc5tDEZiJA" memberEnd="_DBkW3iyCEeaXbc5tDEZiJA _DBkW4SyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkW3iyCEeaXbc5tDEZiJA _DBkW4SyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkW3iyCEeaXbc5tDEZiJA" name="销售记录的增删改查" visibility="private" type="_DBkWYSyCEeaXbc5tDEZiJA" association="_DBkW3SyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW3yyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW4CyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkW4SyCEeaXbc5tDEZiJA" name="系统管理员" visibility="private" type="_DBkWZyyCEeaXbc5tDEZiJA" association="_DBkW3SyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW4iyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW4yyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkW5CyCEeaXbc5tDEZiJA" name="数据库管理员"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DBkW5SyCEeaXbc5tDEZiJA" name="用户管理员">
+    <generalization xmi:id="_DBkW5iyCEeaXbc5tDEZiJA" general="_DBkWZyyCEeaXbc5tDEZiJA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBkW5yyCEeaXbc5tDEZiJA" memberEnd="_DBkW6CyCEeaXbc5tDEZiJA _DBkW6yyCEeaXbc5tDEZiJA" navigableOwnedEnd="_DBkW6CyCEeaXbc5tDEZiJA _DBkW6yyCEeaXbc5tDEZiJA">
+    <ownedEnd xmi:id="_DBkW6CyCEeaXbc5tDEZiJA" name="查看商品列表" visibility="private" type="_DBkWWyyCEeaXbc5tDEZiJA" association="_DBkW5yyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW6SyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW6iyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DBkW6yyCEeaXbc5tDEZiJA" name="销售员" visibility="private" type="_DBkWZSyCEeaXbc5tDEZiJA" association="_DBkW5yyCEeaXbc5tDEZiJA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBkW7CyCEeaXbc5tDEZiJA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBkW7SyCEeaXbc5tDEZiJA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:id="_DBkW7iyCEeaXbc5tDEZiJA">
+    <eAnnotations xmi:id="_DBkW7yyCEeaXbc5tDEZiJA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

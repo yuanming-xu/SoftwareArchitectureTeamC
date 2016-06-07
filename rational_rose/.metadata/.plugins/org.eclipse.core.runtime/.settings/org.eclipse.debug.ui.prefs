@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8"?><launchPerspectives/>
+org.eclispe.debug.ui.Debug_view.debug_toolbar_hidden_perspectives=org.eclipse.debug.ui.DebugPerspective,
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+preferredTargets=default\:default|
