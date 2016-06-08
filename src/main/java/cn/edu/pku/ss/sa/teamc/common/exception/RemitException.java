@@ -1,7 +1,7 @@
 package cn.edu.pku.ss.sa.teamc.common.exception;
 
 
-import wangyin.app.server.facade.exception.AppException;
+
 
 import java.util.HashMap;
 import java.util.Map;
