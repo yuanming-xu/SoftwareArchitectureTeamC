@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * author:wychangdonglei
+ * author:donglei.chang
  * Date:2014-05-12
  * Time:下午6:54
  * 说明:
